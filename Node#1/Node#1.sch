@@ -163,7 +163,7 @@
 <smd name="3" x="-3.2004" y="-2.3114" dx="1.6002" dy="0.8382" layer="1"/>
 <smd name="4" x="3.2004" y="0" dx="1.6002" dy="3.0988" layer="1"/>
 </package>
-<package name="R0805">
+<package name="R0805_2">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="-0.635" y1="-1.68" x2="-0.635" y2="-0.86" width="0.1524" layer="51"/>
 <wire x1="0.635" y1="-1.68" x2="0.635" y2="-0.86" width="0.1524" layer="51"/>
@@ -215,6 +215,82 @@
 <smd name="1" x="-4.55" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
 <smd name="4" x="4.55" y="-2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
 <smd name="2" x="4.55" y="2.25" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+</package>
+<package name="XTAL_ECS-160-12-36-AGN-TR">
+<wire x1="1.25" y1="-1" x2="1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.7" y1="1.4" x2="-1.7" y2="1.4" width="0.05" layer="39"/>
+<wire x1="-1.7" y1="1.4" x2="-1.7" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="-1.7" y1="-1.4" x2="1.7" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="1.7" y1="-1.4" x2="1.7" y2="1.4" width="0.05" layer="39"/>
+<text x="-1.752909375" y="1.65275" size="0.610615625" layer="25">&gt;NAME</text>
+<text x="-1.750690625" y="-2.25086875" size="0.6098375" layer="27">&gt;VALUE</text>
+<wire x1="-1.25" y1="-1" x2="1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1" x2="-1.25" y2="1" width="0.127" layer="51"/>
+<circle x="-2.05" y="-0.7" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.05" y="-0.7" radius="0.1" width="0.2" layer="51"/>
+<smd name="1" x="-0.85" y="-0.65" dx="1" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="0.85" y="-0.65" dx="1" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="0.85" y="0.65" dx="1" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="-0.85" y="0.65" dx="1" dy="1.2" layer="1" rot="R90"/>
+</package>
+<package name="R0805">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
+<package name="XTAL_NX2012SA-32.768K-STD-MUB-1">
+<wire x1="-1.025" y1="0.6" x2="-1.025" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-1.025" y1="-0.6" x2="1.025" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="1.025" y1="-0.6" x2="1.025" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1.025" y1="0.6" x2="-1.025" y2="0.6" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="0.875" x2="-1.5" y2="-0.875" width="0.05" layer="39"/>
+<wire x1="-1.5" y1="-0.875" x2="1.5" y2="-0.875" width="0.05" layer="39"/>
+<wire x1="1.5" y1="-0.875" x2="1.5" y2="0.875" width="0.05" layer="39"/>
+<wire x1="1.5" y1="0.875" x2="-1.5" y2="0.875" width="0.05" layer="39"/>
+<text x="-1.27158125" y="0.994240625" size="0.40690625" layer="25">&gt;NAME</text>
+<text x="-1.27221875" y="-1.30626875" size="0.407109375" layer="27">&gt;VALUE</text>
+<smd name="1" x="-0.75" y="0" dx="1" dy="1.25" layer="1"/>
+<smd name="2" x="0.75" y="0" dx="1" dy="1.25" layer="1"/>
+</package>
+<package name="FLIPCHIP">
+<wire x1="-0.7" y1="-0.425" x2="0.7" y2="-0.425" width="0.05" layer="21"/>
+<wire x1="-0.7" y1="0.425" x2="0.7" y2="0.425" width="0.05" layer="21"/>
+<wire x1="-0.7" y1="0.425" x2="-0.7" y2="-0.425" width="0.05" layer="21"/>
+<wire x1="0.7" y1="0.425" x2="0.7" y2="-0.425" width="0.05" layer="21"/>
+<circle x="-0.8" y="0.6" radius="0.05" width="0.1" layer="21"/>
+<smd name="A1" x="-0.5" y="0.2" dx="0.255" dy="0.255" layer="1" roundness="100"/>
+<smd name="B1" x="0.5" y="0.2" dx="0.255" dy="0.255" layer="1" roundness="100"/>
+<smd name="A2" x="-0.5" y="-0.2" dx="0.255" dy="0.255" layer="1" roundness="100"/>
+<smd name="B2" x="0.5" y="-0.2" dx="0.255" dy="0.255" layer="1" roundness="100"/>
+</package>
+<package name="CONUFL001-SMD">
+<description>&lt;b&gt;CONUFL001-SMD&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="0" y="-1.525" dx="1.05" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="-1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R90"/>
+<smd name="3" x="1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R90"/>
+<text x="-0.332" y="0.051" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.332" y="0.051" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.3" y1="1.3" x2="1.3" y2="1.3" width="0.2" layer="51"/>
+<wire x1="1.3" y1="1.3" x2="1.3" y2="-1.3" width="0.2" layer="51"/>
+<wire x1="1.3" y1="-1.3" x2="-1.3" y2="-1.3" width="0.2" layer="51"/>
+<wire x1="-1.3" y1="-1.3" x2="-1.3" y2="1.3" width="0.2" layer="51"/>
+<wire x1="-1.3" y1="1.3" x2="1.3" y2="1.3" width="0.2" layer="21"/>
+<wire x1="-1.3" y1="-1.3" x2="-0.761" y2="-1.3" width="0.2" layer="21"/>
+<wire x1="1.3" y1="-1.3" x2="0.761" y2="-1.3" width="0.2" layer="21"/>
+<circle x="-0.013" y="-2.353" radius="0.031" width="0.2" layer="25"/>
 </package>
 </packages>
 <symbols>
@@ -320,6 +396,59 @@
 <pin name="3" x="12.7" y="2.54" length="middle" direction="pas" rot="R180"/>
 <pin name="4" x="12.7" y="-2.54" length="middle" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="ECS-160-12-36-AGN-TR">
+<text x="-12.7289" y="7.6374" size="1.78811875" layer="95">&gt;NAME</text>
+<text x="-12.7089" y="-7.62533125" size="1.781440625" layer="96">&gt;VALUE</text>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<pin name="OUT/IN" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="IN/OUT" x="-17.78" y="2.54" length="middle"/>
+<pin name="GND" x="17.78" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="L-EU_S">
+<text x="-1.4986" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.302" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.016" y1="-3.556" x2="1.016" y2="3.556" layer="94"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+<symbol name="NX2012SA-32.768K-STD-MUB-1">
+<text x="-5.0919" y="3.81893125" size="1.78216875" layer="95">&gt;NAME</text>
+<text x="-5.09111875" y="-5.09111875" size="1.781890625" layer="96">&gt;VALUE</text>
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="BALF-NRG-01D3">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="RX_P" x="-10.16" y="-2.54" length="short" direction="pwr"/>
+<pin name="RX_N" x="-10.16" y="2.54" length="short" direction="pwr"/>
+<pin name="ANT" x="10.16" y="2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="CONUFL001-SMD">
+<wire x1="5.08" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-5.08" x2="25.4" y2="2.54" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="26.67" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="26.67" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="SIG" x="0" y="0" length="middle" direction="in"/>
+<pin name="GND_1" x="0" y="-2.54" length="middle"/>
+<pin name="GND_2" x="30.48" y="0" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BLUENRG-232" prefix="U">
@@ -400,7 +529,7 @@
 <gate name="G$1" symbol="L-EU" x="0" y="-5.08"/>
 </gates>
 <devices>
-<device name="" package="R0805">
+<device name="" package="R0805_2">
 <connects>
 <connect gate="G$1" pin="1" pad="2"/>
 <connect gate="G$1" pin="2" pad="1"/>
@@ -434,6 +563,123 @@
 <attribute name="PACKAGE" value="None"/>
 <attribute name="PRICE" value="None"/>
 <attribute name="TE_PURCHASE_URL" value="https://www.te.com/usa-en/product-FSM4JSMAATR.html?te_bu=Cor&amp;te_type=disp&amp;te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&amp;elqCampaignId=32493"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ECS-160-12-36-AGN-TR" prefix="Y">
+<description>The minature ECX-2236 is a compact SMD Crystal. The industry
+standard 2.5 x 2.0 x 0.55 mm ceramic package is ideal for
+today’s SMD manufacturing environment.</description>
+<gates>
+<gate name="G$1" symbol="ECS-160-12-36-AGN-TR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XTAL_ECS-160-12-36-AGN-TR">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="IN/OUT" pad="1"/>
+<connect gate="G$1" pin="OUT/IN" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" Crystal 16MHz ±25ppm _Tol_ ±30ppm _Stability_ 12pF FUND 80Ohm 4-Pin Mini-CSMD T/R "/>
+<attribute name="MF" value="ECS Inc."/>
+<attribute name="MP" value="ECS-160-12-36-AGN-TR"/>
+<attribute name="PACKAGE" value="SMD-4 ECS International"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L">
+<gates>
+<gate name="G$1" symbol="L-EU_S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NX2012SA-32.768K-STD-MUB-1" prefix="Y">
+<description>Crystal 32.7680khz 12.5pf Smd</description>
+<gates>
+<gate name="G$1" symbol="NX2012SA-32.768K-STD-MUB-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XTAL_NX2012SA-32.768K-STD-MUB-1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" Crystal 32.7680khz 12.5pf Smd "/>
+<attribute name="MF" value="NDK America,"/>
+<attribute name="MP" value="NX2012SA-32.768K-STD-MUB-1"/>
+<attribute name="PACKAGE" value="SMD-2 NDK"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BALF-NRG-01D3">
+<gates>
+<gate name="A" symbol="BALF-NRG-01D3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FLIPCHIP">
+<connects>
+<connect gate="A" pin="ANT" pad="A1"/>
+<connect gate="A" pin="GND" pad="A2"/>
+<connect gate="A" pin="RX_N" pad="B2"/>
+<connect gate="A" pin="RX_P" pad="B1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" 50 Ω nominal input / conjugate match balun to BlueNRG transceiver, with integrated harmonic filter "/>
+<attribute name="MF" value="STMicroelectronics"/>
+<attribute name="MP" value="BALF-NRG-01D3"/>
+<attribute name="PACKAGE" value="WFBGA-4 STMicroelectronics"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONUFL001-SMD" prefix="ANT">
+<description>&lt;b&gt;RF Connectors / Coaxial Connectors U.FL Straight Surface Mount Jack&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/CONUFL001-SMD.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONUFL001-SMD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONUFL001-SMD">
+<connects>
+<connect gate="G$1" pin="GND_1" pad="2"/>
+<connect gate="G$1" pin="GND_2" pad="3"/>
+<connect gate="G$1" pin="SIG" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="RF Connectors / Coaxial Connectors U.FL Straight Surface Mount Jack" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Linx Technologies" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="CONUFL001-SMD" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="712-CONUFL001-SMD" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6318,10 +6564,33 @@ General-purpose diode for high-speed switching</description>
 <part name="S1" library="BlueHome" deviceset="FSM4JSMAATR" device=""/>
 <part name="GND4" library="supply1" deviceset="0V" device=""/>
 <part name="D1" library="diode" deviceset="BAS40-06" device=""/>
+<part name="Y1" library="BlueHome" deviceset="ECS-160-12-36-AGN-TR" device=""/>
+<part name="C12" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="C13" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="GND5" library="supply1" deviceset="0V" device=""/>
+<part name="GND6" library="supply1" deviceset="0V" device=""/>
+<part name="U$3" library="BlueHome" deviceset="L" device=""/>
+<part name="Y2" library="BlueHome" deviceset="NX2012SA-32.768K-STD-MUB-1" device=""/>
+<part name="C14" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="C15" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="U$4" library="BlueHome" deviceset="L" device=""/>
+<part name="GND7" library="supply1" deviceset="0V" device=""/>
+<part name="GND8" library="supply1" deviceset="0V" device=""/>
+<part name="U$5" library="BlueHome" deviceset="BALF-NRG-01D3" device=""/>
+<part name="GND9" library="supply1" deviceset="0V" device=""/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="C17" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="U$6" library="BlueHome" deviceset="L" device=""/>
+<part name="GND10" library="supply1" deviceset="0V" device=""/>
+<part name="GND11" library="supply1" deviceset="0V" device=""/>
+<part name="ANT1" library="BlueHome" deviceset="CONUFL001-SMD" device=""/>
+<part name="GND12" library="supply1" deviceset="0V" device=""/>
+<part name="GND13" library="supply1" deviceset="0V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="60.96" y="60.96" size="1.016" layer="91">(FOR SWITCHING ANTENNA)</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="38.1" y="50.8"/>
@@ -6348,6 +6617,28 @@ General-purpose diode for high-speed switching</description>
 <instance part="S1" gate="G$1" x="-15.24" y="81.28"/>
 <instance part="GND4" gate="1" x="-45.72" y="68.58"/>
 <instance part="D1" gate="G$1" x="10.16" y="81.28" rot="R90"/>
+<instance part="Y1" gate="G$1" x="-33.02" y="50.8" rot="R270"/>
+<instance part="C12" gate="G$1" x="-15.24" y="33.02" rot="R180"/>
+<instance part="C13" gate="G$1" x="-15.24" y="55.88" rot="R180"/>
+<instance part="GND5" gate="1" x="-22.86" y="35.56"/>
+<instance part="GND6" gate="1" x="-35.56" y="27.94"/>
+<instance part="U$3" gate="G$1" x="-15.24" y="48.26"/>
+<instance part="Y2" gate="G$1" x="5.08" y="53.34" rot="R90"/>
+<instance part="C14" gate="G$1" x="0" y="58.42" rot="R270"/>
+<instance part="C15" gate="G$1" x="0" y="48.26" rot="R270"/>
+<instance part="U$4" gate="G$1" x="-7.62" y="40.64"/>
+<instance part="GND7" gate="1" x="-7.62" y="30.48"/>
+<instance part="GND8" gate="1" x="12.7" y="48.26"/>
+<instance part="U$5" gate="A" x="86.36" y="40.64"/>
+<instance part="GND9" gate="1" x="99.06" y="33.02"/>
+<instance part="C16" gate="G$1" x="106.68" y="35.56" rot="R180"/>
+<instance part="C17" gate="G$1" x="121.92" y="35.56" rot="R180"/>
+<instance part="U$6" gate="G$1" x="114.3" y="43.18" rot="R90"/>
+<instance part="GND10" gate="1" x="106.68" y="27.94"/>
+<instance part="GND11" gate="1" x="121.92" y="27.94"/>
+<instance part="ANT1" gate="G$1" x="132.08" y="43.18"/>
+<instance part="GND12" gate="1" x="129.54" y="35.56"/>
+<instance part="GND13" gate="1" x="165.1" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -6409,14 +6700,6 @@ General-purpose diode for high-speed switching</description>
 <junction x="5.08" y="88.9"/>
 </segment>
 </net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="ANATEST1"/>
-<wire x1="60.96" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="60.96" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="58.42" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="0V" class="0">
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -6467,6 +6750,65 @@ General-purpose diode for high-speed switching</description>
 <wire x1="-45.72" y1="71.12" x2="-45.72" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="-45.72" y1="73.66" x2="-43.18" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="-15.24" y1="38.1" x2="-15.24" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="40.64" x2="-15.24" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="40.64" x2="-22.86" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-15.24" y="40.64"/>
+<pinref part="GND5" gate="1" pin="0V"/>
+<wire x1="-22.86" y1="40.64" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND6" gate="1" pin="0V"/>
+<pinref part="Y1" gate="G$1" pin="GND"/>
+<wire x1="-35.56" y1="30.48" x2="-35.56" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="0V"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="33.02" x2="-7.62" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="TEST"/>
+<pinref part="GND8" gate="1" pin="0V"/>
+<wire x1="15.24" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND1" gate="1" pin="0V"/>
+<wire x1="66.04" y1="20.32" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="EXP"/>
+<wire x1="66.04" y1="25.4" x2="60.96" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND9" gate="1" pin="0V"/>
+<pinref part="U$5" gate="A" pin="GND"/>
+<wire x1="96.52" y1="38.1" x2="99.06" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="38.1" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="33.02" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="0V"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="121.92" y1="33.02" x2="121.92" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="0V"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="0V"/>
+<wire x1="129.54" y1="38.1" x2="129.54" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="ANT1" gate="G$1" pin="GND_1"/>
+<wire x1="129.54" y1="40.64" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="ANT1" gate="G$1" pin="GND_2"/>
+<wire x1="162.56" y1="43.18" x2="165.1" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="0V"/>
+<wire x1="165.1" y1="43.18" x2="165.1" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6550,6 +6892,128 @@ General-purpose diode for high-speed switching</description>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="-33.02" y1="73.66" x2="-30.48" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-30.48" y="73.66"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<wire x1="-10.16" y1="27.94" x2="-10.16" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="FXTAL1"/>
+<wire x1="-10.16" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="OUT/IN"/>
+<wire x1="-10.16" y1="27.94" x2="-15.24" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="27.94" x2="-30.48" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="27.94" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="-15.24" y1="30.48" x2="-15.24" y2="27.94" width="0.1524" layer="91"/>
+<junction x="-15.24" y="27.94"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="FXTAL0"/>
+<wire x1="15.24" y1="63.5" x2="-15.24" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="63.5" x2="-22.86" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="63.5" x2="-22.86" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="71.12" x2="-30.48" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="IN/OUT"/>
+<wire x1="-30.48" y1="71.12" x2="-30.48" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="-15.24" y1="60.96" x2="-15.24" y2="63.5" width="0.1524" layer="91"/>
+<junction x="-15.24" y="63.5"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="C13" gate="G$1" pin="1"/>
+<pinref part="U$3" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="1"/>
+<wire x1="-7.62" y1="45.72" x2="-7.62" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="48.26" x2="-5.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="48.26" x2="-7.62" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-7.62" y="48.26"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="58.42" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="Y2" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="58.42" x2="5.08" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="58.42" x2="10.16" y2="55.88" width="0.1524" layer="91"/>
+<junction x="5.08" y="58.42"/>
+<pinref part="U1" gate="G$1" pin="SXTAL0"/>
+<wire x1="10.16" y1="55.88" x2="15.24" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="C15" gate="G$1" pin="1"/>
+<pinref part="Y2" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="48.26" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="48.26" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="48.26" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
+<junction x="5.08" y="48.26"/>
+<pinref part="U1" gate="G$1" pin="SXTAL1"/>
+<wire x1="10.16" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="ADC1"/>
+<wire x1="15.24" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="ADC2"/>
+<wire x1="15.24" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$5" gate="A" pin="RX_P"/>
+<wire x1="76.2" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="38.1" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="RF0"/>
+<wire x1="71.12" y1="40.64" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="RF1"/>
+<wire x1="60.96" y1="38.1" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="38.1" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="A" pin="RX_N"/>
+<wire x1="68.58" y1="43.18" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="40.64" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="A" pin="ANT"/>
+<wire x1="106.68" y1="43.18" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="43.18" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
+<junction x="106.68" y="43.18"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="2"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="43.18" x2="121.92" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="43.18" x2="121.92" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="43.18" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
+<junction x="121.92" y="43.18"/>
+<pinref part="ANT1" gate="G$1" pin="SIG"/>
 </segment>
 </net>
 </nets>
