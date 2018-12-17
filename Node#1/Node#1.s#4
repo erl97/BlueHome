@@ -163,7 +163,7 @@
 <smd name="3" x="-3.2004" y="-2.3114" dx="1.6002" dy="0.8382" layer="1"/>
 <smd name="4" x="3.2004" y="0" dx="1.6002" dy="3.0988" layer="1"/>
 </package>
-<package name="R0805">
+<package name="R0805_2">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="-0.635" y1="-1.68" x2="-0.635" y2="-0.86" width="0.1524" layer="51"/>
 <wire x1="0.635" y1="-1.68" x2="0.635" y2="-0.86" width="0.1524" layer="51"/>
@@ -429,7 +429,7 @@
 <gate name="G$1" symbol="L-EU" x="0" y="-5.08"/>
 </gates>
 <devices>
-<device name="" package="R0805">
+<device name="" package="R0805_2">
 <connects>
 <connect gate="G$1" pin="1" pad="2"/>
 <connect gate="G$1" pin="2" pad="1"/>
