@@ -636,7 +636,7 @@ grid 2.54 mm</description>
 <rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
 <rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
 </package>
-<package name="R0805">
+<package name="R0805_2">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="-0.635" y1="-1.68" x2="-0.635" y2="-0.86" width="0.1524" layer="51"/>
 <wire x1="0.635" y1="-1.68" x2="0.635" y2="-0.86" width="0.1524" layer="51"/>
@@ -706,6 +706,36 @@ grid 2.54 mm</description>
 <smd name="2" x="0.85" y="-0.65" dx="1" dy="1.2" layer="1" rot="R90"/>
 <smd name="3" x="0.85" y="0.65" dx="1" dy="1.2" layer="1" rot="R90"/>
 <smd name="4" x="-0.85" y="0.65" dx="1" dy="1.2" layer="1" rot="R90"/>
+</package>
+<package name="R0805">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
+<package name="XTAL_NX2012SA-32.768K-STD-MUB-1">
+<wire x1="-1.025" y1="0.6" x2="-1.025" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-1.025" y1="-0.6" x2="1.025" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="1.025" y1="-0.6" x2="1.025" y2="0.6" width="0.127" layer="51"/>
+<wire x1="1.025" y1="0.6" x2="-1.025" y2="0.6" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="0.875" x2="-1.5" y2="-0.875" width="0.05" layer="39"/>
+<wire x1="-1.5" y1="-0.875" x2="1.5" y2="-0.875" width="0.05" layer="39"/>
+<wire x1="1.5" y1="-0.875" x2="1.5" y2="0.875" width="0.05" layer="39"/>
+<wire x1="1.5" y1="0.875" x2="-1.5" y2="0.875" width="0.05" layer="39"/>
+<text x="-1.27158125" y="0.994240625" size="0.40690625" layer="25">&gt;NAME</text>
+<text x="-1.27221875" y="-1.30626875" size="0.407109375" layer="27">&gt;VALUE</text>
+<smd name="1" x="-0.75" y="0" dx="1" dy="1.25" layer="1"/>
+<smd name="2" x="0.75" y="0" dx="1" dy="1.25" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -1050,6 +1080,27 @@ grid 2.54 mm</description>
 <pin name="OUT/IN" x="17.78" y="2.54" length="middle" rot="R180"/>
 <pin name="IN/OUT" x="-17.78" y="2.54" length="middle"/>
 <pin name="GND" x="17.78" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="L-EU_S">
+<text x="-1.4986" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.302" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.016" y1="-3.556" x2="1.016" y2="3.556" layer="94"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+<symbol name="NX2012SA-32.768K-STD-MUB-1">
+<text x="-5.0919" y="3.81893125" size="1.78216875" layer="95">&gt;NAME</text>
+<text x="-5.09111875" y="-5.09111875" size="1.781890625" layer="96">&gt;VALUE</text>
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1545,7 +1596,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/TSL25911FN.pd
 <gate name="G$1" symbol="L-EU" x="0" y="-5.08"/>
 </gates>
 <devices>
-<device name="" package="R0805">
+<device name="" package="R0805_2">
 <connects>
 <connect gate="G$1" pin="1" pad="2"/>
 <connect gate="G$1" pin="2" pad="1"/>
@@ -1605,6 +1656,46 @@ today’s SMD manufacturing environment.</description>
 <attribute name="MF" value="ECS Inc."/>
 <attribute name="MP" value="ECS-160-12-36-AGN-TR"/>
 <attribute name="PACKAGE" value="SMD-4 ECS International"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L">
+<gates>
+<gate name="G$1" symbol="L-EU_S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NX2012SA-32.768K-STD-MUB-1" prefix="Y">
+<description>Crystal 32.7680khz 12.5pf Smd</description>
+<gates>
+<gate name="G$1" symbol="NX2012SA-32.768K-STD-MUB-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XTAL_NX2012SA-32.768K-STD-MUB-1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" Crystal 32.7680khz 12.5pf Smd "/>
+<attribute name="MF" value="NDK America,"/>
+<attribute name="MP" value="NX2012SA-32.768K-STD-MUB-1"/>
+<attribute name="PACKAGE" value="SMD-2 NDK"/>
 <attribute name="PRICE" value="None"/>
 </technology>
 </technologies>
