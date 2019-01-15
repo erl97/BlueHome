@@ -1420,6 +1420,36 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 </package>
 </packages>
 </library>
+<library name="fuse">
+<description>&lt;b&gt;Fuses and Fuse Holders&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="MF-SMDF050">
+<description>&lt;b&gt;MF-SMDF Series - PRC Resettable Fuses&lt;/b&gt;&lt;p&gt;
+Source: http://www.farnell.com/datasheets/716597.pdf</description>
+<smd name="1" x="-2.45" y="0" dx="1.5" dy="4.6" layer="1"/>
+<smd name="2" x="2.45" y="0" dx="1.5" dy="4.6" layer="1"/>
+<wire x1="-2.675" y1="-2.4125" x2="-2.675" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="-2.675" y1="-0.8" x2="-2.6625" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="-2.6625" y1="-0.8" x2="-2.6625" y2="0.7875" width="0.1016" layer="51" curve="126.343451"/>
+<wire x1="-2.6625" y1="0.7875" x2="-2.675" y2="0.7875" width="0.1016" layer="51"/>
+<wire x1="-2.675" y1="0.7875" x2="-2.675" y2="2.4125" width="0.1016" layer="51"/>
+<wire x1="-2.675" y1="2.4125" x2="-1.825" y2="2.4125" width="0.1016" layer="51"/>
+<wire x1="-1.825" y1="2.4125" x2="1.825" y2="2.4125" width="0.1016" layer="51"/>
+<wire x1="1.825" y1="2.4125" x2="2.675" y2="2.4125" width="0.1016" layer="51"/>
+<wire x1="2.675" y1="2.4125" x2="2.675" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="2.675" y1="-0.7875" x2="2.675" y2="-2.4125" width="0.1016" layer="51"/>
+<wire x1="2.675" y1="-2.4125" x2="1.825" y2="-2.4125" width="0.1016" layer="51"/>
+<wire x1="1.825" y1="-2.4125" x2="-1.825" y2="-2.4125" width="0.1016" layer="51"/>
+<wire x1="-1.825" y1="-2.4125" x2="-2.675" y2="-2.4125" width="0.1016" layer="51"/>
+<wire x1="-1.825" y1="-2.4125" x2="-1.825" y2="2.4125" width="0.1016" layer="51"/>
+<wire x1="1.825" y1="2.4125" x2="1.825" y2="-2.4125" width="0.1016" layer="51"/>
+<wire x1="2.675" y1="0.8" x2="2.675" y2="-0.7875" width="0.1016" layer="51" curve="126.343451"/>
+<text x="-3.1" y="2.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.225" y="-4.05" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1674,6 +1704,7 @@ design rules under a new name.</description>
 <element name="Q1" library="transistor-power" package="TO220BV" value="IRF9530" x="-35.56" y="-224.79"/>
 <element name="D1" library="diode" package="DO35Z10" value="ZPD" x="-34.29" y="-236.22"/>
 <element name="R10" library="rcl" package="R0805" value="100k" x="-39.37" y="-242.57"/>
+<element name="U$1" library="fuse" package="MF-SMDF050" value="MF-SMDF050" x="-46.99" y="-240.03"/>
 </elements>
 <signals>
 <signal name="N$2">
@@ -1789,11 +1820,9 @@ design rules under a new name.</description>
 <contactref element="U4" pad="5"/>
 <contactref element="R9" pad="2"/>
 <contactref element="C10" pad="1"/>
-<contactref element="Q1" pad="D"/>
-<contactref element="D1" pad="C"/>
+<contactref element="U$1" pad="2"/>
 <wire x1="-38.42" y1="-154.94" x2="-40.32" y2="-161.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.56" y1="-227.33" x2="-40.32" y2="-161.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.37" y1="-236.22" x2="-35.56" y2="-227.33" width="0" layer="19" extent="1-1"/>
+<wire x1="-44.54" y1="-240.03" x2="-40.32" y2="-161.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.0332" y1="-16.2306" x2="-38.42" y2="-154.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="INT_RTC">
@@ -1826,6 +1855,13 @@ design rules under a new name.</description>
 <contactref element="G3" pad="-"/>
 <wire x1="11.43" y1="-199.39" x2="11.43" y2="-217.17" width="0" layer="19" extent="1-1"/>
 <wire x1="11.43" y1="-181.61" x2="11.43" y2="-199.39" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$8">
+<contactref element="Q1" pad="D"/>
+<contactref element="D1" pad="C"/>
+<contactref element="U$1" pad="1"/>
+<wire x1="-39.37" y1="-236.22" x2="-49.44" y2="-240.03" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.56" y1="-227.33" x2="-39.37" y2="-236.22" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
