@@ -1466,6 +1466,30 @@ Based on the following sources:
 <rectangle x1="4.826" y1="1.016" x2="5.334" y2="1.524" layer="51"/>
 <rectangle x1="4.826" y1="-1.524" x2="5.334" y2="-1.016" layer="51"/>
 </package>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
 </packages>
 </library>
 <library name="jump-0r-smd">
@@ -1784,6 +1808,7 @@ design rules under a new name.</description>
 <element name="R6" library="rcl" package="R0805" value="" x="-29.21" y="-170.18"/>
 <element name="JMP1" library="jump-0r-smd" package="A0R-JMP" value="0R-JUMPA" x="-39.37" y="-166.37"/>
 <element name="JP2" library="jumper" package="JP1" value="" x="-44.45" y="-167.64"/>
+<element name="JP3" library="pinhead" package="1X02" value="" x="-44.45" y="-175.26"/>
 </elements>
 <signals>
 <signal name="+3V3">
@@ -1997,9 +2022,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="TXD">
 <contactref element="U1" pad="3"/>
+<contactref element="JP3" pad="1"/>
+<wire x1="-20.215" y1="5.83" x2="-45.72" y2="-175.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXD">
 <contactref element="U1" pad="32"/>
+<contactref element="JP3" pad="2"/>
+<wire x1="-19.53" y1="7.515" x2="-43.18" y2="-175.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIO0">
 <contactref element="R5" pad="2"/>

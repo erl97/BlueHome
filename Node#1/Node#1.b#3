@@ -3037,6 +3037,7 @@ design rules under a new name.</description>
 <element name="R38" library="rcl" package="R0805" value="" x="-101.6" y="-388.62"/>
 <element name="LED16" library="led" package="LED3MM" value="" x="-99.06" y="-364.49"/>
 <element name="JP7" library="pinhead" package="1X08" value="" x="-107.95" y="-407.67"/>
+<element name="X2" library="BlueHome" package="P-2081-1228" value="2081-1228" x="-127" y="-391.16"/>
 </elements>
 <signals>
 <signal name="+3V3">

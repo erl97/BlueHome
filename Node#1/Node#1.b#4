@@ -3561,6 +3561,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$42">
 <contactref element="R17" pad="1"/>
+<contactref element="JP7" pad="2"/>
+<wire x1="-114.3" y1="-407.67" x2="-112.71" y2="-302.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$43">
 <contactref element="LED12" pad="A"/>
@@ -3569,6 +3571,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$45">
 <contactref element="R16" pad="1"/>
+<contactref element="JP7" pad="1"/>
+<wire x1="-116.84" y1="-407.67" x2="-117.79" y2="-302.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$46">
 <contactref element="R18" pad="2"/>
@@ -3586,6 +3590,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$48">
 <contactref element="R21" pad="1"/>
+<contactref element="JP7" pad="4"/>
+<wire x1="-109.22" y1="-407.67" x2="-112.71" y2="-325.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$49">
 <contactref element="LED14" pad="A"/>
@@ -3603,6 +3609,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$51">
 <contactref element="R20" pad="1"/>
+<contactref element="JP7" pad="3"/>
+<wire x1="-111.76" y1="-407.67" x2="-117.79" y2="-325.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$52">
 <contactref element="R22" pad="2"/>
@@ -3646,6 +3654,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$63">
 <contactref element="R33" pad="1"/>
+<contactref element="JP7" pad="6"/>
+<wire x1="-104.14" y1="-407.67" x2="-87.31" y2="-383.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$64">
 <contactref element="LED6" pad="A"/>
@@ -3654,6 +3664,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$65">
 <contactref element="R32" pad="1"/>
+<contactref element="JP7" pad="5"/>
+<wire x1="-106.68" y1="-407.67" x2="-92.39" y2="-383.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$66">
 <contactref element="R34" pad="2"/>
@@ -3662,6 +3674,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$68">
 <contactref element="R37" pad="1"/>
+<contactref element="JP7" pad="8"/>
+<wire x1="-107.63" y1="-388.62" x2="-99.06" y2="-407.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$69">
 <contactref element="LED8" pad="A"/>
@@ -3670,6 +3684,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$71">
 <contactref element="R36" pad="1"/>
+<contactref element="JP7" pad="7"/>
+<wire x1="-101.6" y1="-407.67" x2="-112.71" y2="-388.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$72">
 <contactref element="R38" pad="2"/>
