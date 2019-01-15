@@ -8239,7 +8239,7 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="-17.78" y="106.68"/>
-<instance part="LS1" gate="G$1" x="22.86" y="45.72" rot="R270"/>
+<instance part="LS1" gate="G$1" x="22.86" y="45.72"/>
 <instance part="U2" gate="G$1" x="162.56" y="58.42"/>
 <instance part="U4" gate="A" x="124.46" y="167.64"/>
 <instance part="IC1" gate="G$1" x="147.32" y="25.4"/>
