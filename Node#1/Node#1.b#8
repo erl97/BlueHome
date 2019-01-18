@@ -3239,14 +3239,6 @@ design rules under a new name.</description>
 <element name="R46" library="rcl" package="R1210" value="" x="-205.74" y="-461.01"/>
 <element name="R47" library="rcl" package="R1210" value="" x="-205.74" y="-467.36"/>
 <element name="R48" library="rcl" package="R1210" value="" x="-205.74" y="-473.71"/>
-<element name="U5" library="BlueHome" package="SOIC127P600X175-14N" value="74HC86D,652" x="-218.44" y="-466.09">
-<attribute name="AVAILABILITY" value="Unavailable" x="-218.44" y="-466.09" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" 74HC Series 6 V Surface Mount Quad 2-Input EXCLUSIVE-OR Gate - SOIC-14 " x="-218.44" y="-466.09" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="74HC86D,652" x="-218.44" y="-466.09" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Nexperia USA" x="-218.44" y="-466.09" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="-218.44" y="-466.09" size="1.778" layer="27" display="off"/>
-<attribute name="PACKAGE" value="SOIC-14 NXP Semiconductors" x="-218.44" y="-466.09" size="1.778" layer="27" display="off"/>
-</element>
 </elements>
 <signals>
 <signal name="+3V3">
@@ -4007,8 +3999,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="VCC">
 <contactref element="U4" pad="3"/>
-<contactref element="U5" pad="14"/>
-<wire x1="-195.6308" y1="-430.53" x2="-215.8492" y2="-462.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V+">
 <contactref element="X3" pad="L2"/>
@@ -4077,6 +4067,18 @@ design rules under a new name.</description>
 <contactref element="R45" pad="2"/>
 <contactref element="U4" pad="7"/>
 <wire x1="-195.6308" y1="-435.61" x2="-204.34" y2="-454.66" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$85">
+<contactref element="U4" pad="1"/>
+</signal>
+<signal name="N$89">
+<contactref element="U4" pad="2"/>
+</signal>
+<signal name="N$90">
+<contactref element="U4" pad="13"/>
+</signal>
+<signal name="N$91">
+<contactref element="U4" pad="14"/>
 </signal>
 </signals>
 </board>

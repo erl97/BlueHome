@@ -10710,6 +10710,7 @@ Source: www.kingbright.com</description>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
 <part name="C21" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="GND45" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11500,6 +11501,7 @@ Source: www.kingbright.com</description>
 <instance part="+3V13" gate="G$1" x="406.4" y="-38.1"/>
 <instance part="GND44" gate="1" x="406.4" y="-68.58"/>
 <instance part="C21" gate="G$1" x="411.48" y="-45.72" rot="R270"/>
+<instance part="GND45" gate="1" x="370.84" y="-68.58"/>
 </instances>
 <busses>
 </busses>
@@ -11619,12 +11621,22 @@ Source: www.kingbright.com</description>
 <wire x1="124.46" y1="68.58" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
 <label x="116.84" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U7" gate="G$1" pin="SCL"/>
+<wire x1="373.38" y1="-45.72" x2="368.3" y2="-45.72" width="0.1524" layer="91"/>
+<label x="368.3" y="-45.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U2" gate="G$0" pin="SDA"/>
 <wire x1="124.46" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
 <label x="116.84" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U7" gate="G$1" pin="SDA"/>
+<wire x1="373.38" y1="-48.26" x2="368.3" y2="-48.26" width="0.1524" layer="91"/>
+<label x="368.3" y="-48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11783,6 +11795,20 @@ Source: www.kingbright.com</description>
 <junction x="406.4" y="-60.96"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="416.56" y1="-45.72" x2="414.02" y2="-45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND45" gate="1" pin="GND"/>
+<wire x1="370.84" y1="-66.04" x2="370.84" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="U7" gate="G$1" pin="A0"/>
+<wire x1="370.84" y1="-60.96" x2="370.84" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="-58.42" x2="370.84" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="-55.88" x2="373.38" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="U7" gate="G$1" pin="A1"/>
+<wire x1="370.84" y1="-58.42" x2="373.38" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="370.84" y="-58.42"/>
+<pinref part="U7" gate="G$1" pin="A2"/>
+<wire x1="370.84" y1="-60.96" x2="373.38" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="370.84" y="-60.96"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -12723,6 +12749,10 @@ Source: www.kingbright.com</description>
 <wire x1="421.64" y1="-27.94" x2="421.64" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="U5" gate="A" pin="4B"/>
 <wire x1="421.64" y1="-5.08" x2="429.26" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="-27.94" x2="421.64" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="421.64" y="-27.94"/>
+<wire x1="421.64" y1="-38.1" x2="431.8" y2="-38.1" width="0.1524" layer="91"/>
+<label x="426.72" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$97" class="0">
@@ -12731,12 +12761,16 @@ Source: www.kingbright.com</description>
 <wire x1="429.26" y1="-2.54" x2="419.1" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="U7" gate="G$1" pin="ALERT"/>
 <wire x1="403.86" y1="-53.34" x2="419.1" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="419.1" y1="-53.34" x2="419.1" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="-53.34" x2="419.1" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="R50" gate="G$1" pin="1"/>
+<wire x1="419.1" y1="-40.64" x2="419.1" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="-25.4" x2="419.1" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="406.4" y1="-22.86" x2="406.4" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="406.4" y1="-25.4" x2="419.1" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="419.1" y="-25.4"/>
+<wire x1="419.1" y1="-40.64" x2="431.8" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="419.1" y="-40.64"/>
+<label x="426.72" y="-40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$44" class="0">

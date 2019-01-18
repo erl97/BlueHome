@@ -54,6 +54,11 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
@@ -2912,6 +2917,12 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="8.58" y1="10" x2="-3.5" y2="10" width="0.2" layer="21"/>
 <wire x1="-3.5" y1="10" x2="-3.5" y2="0" width="0.2" layer="21"/>
 </package>
+<package name="TOUCH_BUTTON">
+<pad name="P$1" x="6.5" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="7.5" width="0" layer="1"/>
+<hole x="0" y="0" drill="2"/>
+<circle x="0" y="0" radius="10" width="0" layer="41"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ACS723LLCTR-40AB-T">
@@ -3730,6 +3741,10 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 <pin name="1" x="0" y="0" length="middle"/>
 <pin name="2" x="0" y="-2.54" length="middle"/>
+</symbol>
+<symbol name="TOUCH_BUTTON">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<pin name="BUTTON" x="5.08" y="0" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4963,6 +4978,21 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/1757242.pdf"&
 <attribute name="MANUFACTURER_PART_NUMBER" value="1757242" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="651-1757242" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TOUCH_BUTTON">
+<gates>
+<gate name="G$1" symbol="TOUCH_BUTTON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TOUCH_BUTTON">
+<connects>
+<connect gate="G$1" pin="BUTTON" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
