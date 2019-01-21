@@ -2277,6 +2277,9 @@ design rules under a new name.</description>
 <signal name="RESE">
 <contactref element="J1" pad="3"/>
 </signal>
+<signal name="BS">
+<contactref element="J1" pad="8"/>
+</signal>
 </signals>
 </board>
 </drawing>

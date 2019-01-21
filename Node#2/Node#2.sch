@@ -55,6 +55,11 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -382,6 +387,48 @@
 <smd name="32" x="-2.5" y="-1.75" dx="0.8" dy="0.2846" layer="1"/>
 <smd name="EP" x="0" y="0" dx="3.15" dy="3.15" layer="1" cream="no"/>
 </package>
+<package name="SOT65P210X110-3N">
+<description>&lt;b&gt;SC-70(3LEADS)&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.05" y="0.65" dx="1.05" dy="0.5" layer="1"/>
+<smd name="2" x="-1.05" y="-0.65" dx="1.05" dy="0.5" layer="1"/>
+<smd name="3" x="1.05" y="0" dx="1.05" dy="0.5" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.825" y1="1.35" x2="1.825" y2="1.35" width="0.05" layer="51"/>
+<wire x1="1.825" y1="1.35" x2="1.825" y2="-1.35" width="0.05" layer="51"/>
+<wire x1="1.825" y1="-1.35" x2="-1.825" y2="-1.35" width="0.05" layer="51"/>
+<wire x1="-1.825" y1="-1.35" x2="-1.825" y2="1.35" width="0.05" layer="51"/>
+<wire x1="-0.625" y1="1" x2="0.625" y2="1" width="0.1" layer="51"/>
+<wire x1="0.625" y1="1" x2="0.625" y2="-1" width="0.1" layer="51"/>
+<wire x1="0.625" y1="-1" x2="-0.625" y2="-1" width="0.1" layer="51"/>
+<wire x1="-0.625" y1="-1" x2="-0.625" y2="1" width="0.1" layer="51"/>
+<wire x1="-0.625" y1="0.35" x2="0.025" y2="1" width="0.1" layer="51"/>
+<wire x1="-0.175" y1="1" x2="0.175" y2="1" width="0.2" layer="21"/>
+<wire x1="0.175" y1="1" x2="0.175" y2="-1" width="0.2" layer="21"/>
+<wire x1="0.175" y1="-1" x2="-0.175" y2="-1" width="0.2" layer="21"/>
+<wire x1="-0.175" y1="-1" x2="-0.175" y2="1" width="0.2" layer="21"/>
+<wire x1="-1.575" y1="1.15" x2="-0.525" y2="1.15" width="0.2" layer="21"/>
+</package>
+<package name="SOD3716X135N">
+<description>&lt;b&gt;SOD-123 CASE425-04 ISSUE G&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.75" y="0" dx="1.15" dy="0.8" layer="1"/>
+<smd name="2" x="1.75" y="0" dx="1.15" dy="0.8" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.575" y1="1.67" x2="2.575" y2="1.67" width="0.05" layer="51"/>
+<wire x1="2.575" y1="1.67" x2="2.575" y2="-1.67" width="0.05" layer="51"/>
+<wire x1="2.575" y1="-1.67" x2="-2.575" y2="-1.67" width="0.05" layer="51"/>
+<wire x1="-2.575" y1="-1.67" x2="-2.575" y2="1.67" width="0.05" layer="51"/>
+<wire x1="-1.345" y1="0.8" x2="1.345" y2="0.8" width="0.1" layer="51"/>
+<wire x1="1.345" y1="0.8" x2="1.345" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="1.345" y1="-0.8" x2="-1.345" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="-1.345" y1="-0.8" x2="-1.345" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-1.345" y1="0.225" x2="-0.77" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-2.325" y1="0.8" x2="1.345" y2="0.8" width="0.2" layer="21"/>
+<wire x1="-1.345" y1="-0.8" x2="1.345" y2="-0.8" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="68712414522">
@@ -535,6 +582,39 @@
 <pin name="GND_3" x="43.18" y="-68.58" length="middle" rot="R180"/>
 <text x="2.54" y="-2.54" size="1.27" layer="94">SX8635</text>
 <pin name="GPIO7" x="43.18" y="-55.88" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SI1308EDL-T1-GE3">
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="5.842" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="5.842" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.842" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="5.842" y1="5.588" x2="5.842" y2="4.572" width="0.254" layer="94"/>
+<wire x1="5.842" y1="-0.508" x2="5.842" y2="0.508" width="0.254" layer="94"/>
+<wire x1="5.842" y1="2.032" x2="5.842" y2="3.048" width="0.254" layer="94"/>
+<circle x="6.35" y="2.54" radius="3.81" width="0.254" layer="94"/>
+<text x="11.43" y="3.81" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="11.43" y="1.27" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="G" x="0" y="0" visible="pad" length="short" direction="in"/>
+<pin name="D" x="7.62" y="10.16" visible="pad" length="short" rot="R270"/>
+<pin name="S" x="7.62" y="-5.08" visible="pad" length="short" rot="R90"/>
+<polygon width="0.254" layer="94">
+<vertex x="5.842" y="2.54"/>
+<vertex x="6.858" y="3.048"/>
+<vertex x="6.858" y="2.032"/>
+</polygon>
+</symbol>
+<symbol name="MBR0530">
+<wire x1="5.08" y1="0" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<text x="11.43" y="5.08" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="11.43" y="2.54" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="K" x="0" y="0" visible="pad" length="middle"/>
+<pin name="A" x="15.24" y="0" visible="pad" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -785,6 +865,55 @@ Source: &lt;a href="http://www.ti.com/general/docs/suppproductinfo.tsp?distId=26
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SI1308EDL-T1-GE3" prefix="Q">
+<description>&lt;b&gt;MOSFET N-Ch 30V 1.5A TrenchFET SC70 Vishay Si1308EDL-T1-GE3 N-channel MOSFET Transistor, 1.5 A, 30 V, 3-Pin SC-70&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/SI1308EDL-T1-GE3.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SI1308EDL-T1-GE3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT65P210X110-3N">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="MOSFET N-Ch 30V 1.5A TrenchFET SC70 Vishay Si1308EDL-T1-GE3 N-channel MOSFET Transistor, 1.5 A, 30 V, 3-Pin SC-70" constant="no"/>
+<attribute name="HEIGHT" value="1.1mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Vishay" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="Si1308EDL-T1-GE3" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="78-SI1308EDL-T1-GE3" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MBR0530" prefix="D">
+<description>&lt;b&gt;ON SEMICONDUCTOR - MBR0530 - DIODE, SCHOTTKY, 0.5A, 30V, SOD-123&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.mouser.com/datasheet/2/308/MBR0530-1301245.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MBR0530" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD3716X135N">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="K" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="ON SEMICONDUCTOR - MBR0530 - DIODE, SCHOTTKY, 0.5A, 30V, SOD-123" constant="no"/>
+<attribute name="HEIGHT" value="1.35mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="ON Semiconductor" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="MBR0530" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="512-MBR0530" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -8448,22 +8577,6 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <rectangle x1="2.286" y1="-0.254" x2="4.191" y2="0.254" layer="21"/>
 <rectangle x1="-4.191" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
 </package>
-<package name="POWERDI323">
-<description>1.0A SURFACE MOUNT SCHOTTKY BARRIER RECTIFIER POWERDI ® 323 &lt;p&gt;
-Source: http://www.diodes.com/datasheets/ds30899.pdf</description>
-<smd name="C" x="-0.75" y="0" dx="2" dy="1.1" layer="1"/>
-<smd name="A" x="1.15" y="0" dx="0.8" dy="0.8" layer="1"/>
-<wire x1="-0.875" y1="-0.55" x2="-0.875" y2="0.55" width="0.2032" layer="51"/>
-<wire x1="-0.875" y1="0.55" x2="0.8625" y2="0.55" width="0.2032" layer="51"/>
-<wire x1="0.8625" y1="0.55" x2="0.8625" y2="-0.55" width="0.2032" layer="51"/>
-<wire x1="0.8625" y1="-0.55" x2="-0.875" y2="-0.55" width="0.2032" layer="51"/>
-<rectangle x1="-1.3" y1="-0.5375" x2="-0.525" y2="0.5375" layer="51"/>
-<rectangle x1="0.8375" y1="-0.4" x2="1.3" y2="0.4" layer="51"/>
-<wire x1="0" y1="0.35" x2="-0.425" y2="0" width="0.2" layer="51"/>
-<wire x1="-0.425" y1="0" x2="0" y2="-0.35" width="0.2" layer="51"/>
-<text x="-1.8516" y="0.7786" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.8516" y="-2.5566" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="ZD">
@@ -8478,21 +8591,6 @@ Source: http://www.diodes.com/datasheets/ds30899.pdf</description>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="SCHOTTKY">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ZPD" prefix="D">
@@ -8503,24 +8601,6 @@ Source: http://www.diodes.com/datasheets/ds30899.pdf</description>
 </gates>
 <devices>
 <device name="" package="DO35Z10">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PD3S160" prefix="D">
-<description>1.0A SURFACE MOUNT SCHOTTKY BARRIER RECTIFIER POWERDI ® 323 &lt;p&gt;
-Source: http://www.diodes.com/datasheets/ds30899.pdf</description>
-<gates>
-<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="POWERDI323">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -8592,87 +8672,6 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <technology name="050"/>
 <technology name="150"/>
 <technology name="200"/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="zetex">
-<description>&lt;b&gt;Zetex Power MOS FETs, Bridges, Diodes&lt;/b&gt;&lt;p&gt;
-http://www.zetex.com&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOT-23">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="-1.4224" y1="0.381" x2="1.4732" y2="0.381" width="0.1524" layer="21"/>
-<wire x1="1.4732" y1="0.381" x2="1.4732" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="1.4732" y1="-0.381" x2="-1.4224" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="-1.4224" y1="-0.381" x2="-1.4224" y2="0.381" width="0.1524" layer="21"/>
-<smd name="3" x="0.9906" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
-<smd name="2" x="-0.9398" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
-<smd name="1" x="0.0254" y="-1.016" dx="0.7874" dy="0.889" layer="1"/>
-<text x="-1.397" y="1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="3.302" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="0.7874" y1="0.4318" x2="1.1684" y2="0.9398" layer="51"/>
-<rectangle x1="-1.143" y1="0.4318" x2="-0.762" y2="0.9398" layer="51"/>
-<rectangle x1="-0.1778" y1="-0.9398" x2="0.2032" y2="-0.4318" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="N_MOSFET">
-<wire x1="-0.508" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="-2.159" x2="0" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-0.254" x2="1.397" y2="-3.048" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-3.048" x2="0" y2="-3.048" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="2.159" x2="0" y2="2.159" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.159" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="3.048" x2="1.397" y2="3.048" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="3.048" x2="1.397" y2="0.762" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.159" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<text x="2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<rectangle x1="-2.032" y1="1.397" x2="-1.524" y2="2.921" layer="94"/>
-<rectangle x1="-2.032" y1="-0.762" x2="-1.524" y2="0.762" layer="94"/>
-<rectangle x1="-2.032" y1="-2.921" x2="-1.524" y2="-1.397" layer="94"/>
-<rectangle x1="0.762" y1="0.762" x2="2.032" y2="0.889" layer="94"/>
-<pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
-<polygon width="0.1016" layer="94">
-<vertex x="-1.524" y="0"/>
-<vertex x="-0.508" y="0.635"/>
-<vertex x="-0.508" y="-0.635"/>
-</polygon>
-<polygon width="0.1016" layer="94">
-<vertex x="1.397" y="0.762"/>
-<vertex x="2.032" y="-0.254"/>
-<vertex x="0.762" y="-0.254"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NMOSSOT23" prefix="T" uservalue="yes">
-<description>&lt;b&gt;MOS FET&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="N_MOSFET" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23">
-<connects>
-<connect gate="A" pin="D" pad="1"/>
-<connect gate="A" pin="G" pad="3"/>
-<connect gate="A" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -8761,15 +8760,11 @@ http://www.zetex.com&lt;p&gt;
 <part name="C23" library="rcl" deviceset="C-EU" device="C0805" value="1µF"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="!!!SI1308EDL!!!" library="zetex" deviceset="NMOSSOT23" device=""/>
 <part name="C24" library="rcl" deviceset="C-EU" device="C0805" value="10µF"/>
 <part name="C25" library="rcl" deviceset="C-EU" device="C0805" value="10µF"/>
-<part name="L2" library="rcl" deviceset="L-EU" device="L1812" value="10µH"/>
-<part name="C26" library="rcl" deviceset="C-EU" device="C0805" value="4.7µF"/>
+<part name="L2" library="rcl" deviceset="L-EU" device="L1812" value="68µH"/>
+<part name="C26" library="rcl" deviceset="C-EU" device="C0805" value="0.1µF"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="!!!MBR0530!!!" library="diode" deviceset="PD3S160" device=""/>
-<part name="!!!MBR0530!!!1" library="diode" deviceset="PD3S160" device=""/>
-<part name="!!!MBR0530!!!2" library="diode" deviceset="PD3S160" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="C28" library="rcl" deviceset="C-EU" device="C0805" value="1µF"/>
 <part name="C29" library="rcl" deviceset="C-EU" device="C0805" value="10µF"/>
@@ -8785,6 +8780,11 @@ http://www.zetex.com&lt;p&gt;
 <part name="C33" library="rcl" deviceset="C-EU" device="C0805" value="1µF"/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="Q2" library="BlueHome" deviceset="SI1308EDL-T1-GE3" device=""/>
+<part name="D5" library="BlueHome" deviceset="MBR0530" device=""/>
+<part name="D6" library="BlueHome" deviceset="MBR0530" device=""/>
+<part name="D7" library="BlueHome" deviceset="MBR0530" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8826,7 +8826,7 @@ http://www.zetex.com&lt;p&gt;
 <instance part="GND3" gate="1" x="104.14" y="144.78"/>
 <instance part="GND4" gate="1" x="71.12" y="147.32"/>
 <instance part="GND1" gate="1" x="149.86" y="162.56"/>
-<instance part="Q1" gate="G$1" x="33.02" y="170.18" rot="R90"/>
+<instance part="Q1" gate="G$1" x="30.48" y="170.18" rot="MR90"/>
 <instance part="D1" gate="G$1" x="40.64" y="167.64" rot="R90"/>
 <instance part="R10" gate="G$1" x="35.56" y="154.94" rot="R90"/>
 <instance part="GND6" gate="1" x="35.56" y="142.24"/>
@@ -8863,15 +8863,11 @@ http://www.zetex.com&lt;p&gt;
 <instance part="C23" gate="G$1" x="-347.98" y="91.44" rot="R270"/>
 <instance part="GND12" gate="1" x="-287.02" y="73.66"/>
 <instance part="GND13" gate="1" x="195.58" y="-106.68"/>
-<instance part="!!!SI1308EDL!!!" gate="A" x="-218.44" y="127"/>
 <instance part="C24" gate="G$1" x="-246.38" y="88.9"/>
 <instance part="C25" gate="G$1" x="-238.76" y="88.9"/>
 <instance part="L2" gate="G$1" x="-228.6" y="96.52" rot="R90"/>
 <instance part="C26" gate="G$1" x="-203.2" y="96.52" rot="R90"/>
 <instance part="GND14" gate="1" x="-238.76" y="73.66"/>
-<instance part="!!!MBR0530!!!" gate="G$1" x="-210.82" y="83.82" rot="R270"/>
-<instance part="!!!MBR0530!!!1" gate="G$1" x="-193.04" y="83.82" rot="R270"/>
-<instance part="!!!MBR0530!!!2" gate="G$1" x="-180.34" y="83.82" rot="R90"/>
 <instance part="GND15" gate="1" x="-193.04" y="63.5"/>
 <instance part="C28" gate="G$1" x="-180.34" y="50.8" rot="R180"/>
 <instance part="C29" gate="G$1" x="-200.66" y="50.8" rot="R180"/>
@@ -8887,6 +8883,11 @@ http://www.zetex.com&lt;p&gt;
 <instance part="C33" gate="G$1" x="-309.88" y="5.08"/>
 <instance part="+3V8" gate="G$1" x="-238.76" y="104.14"/>
 <instance part="+3V9" gate="G$1" x="-365.76" y="104.14"/>
+<instance part="R16" gate="G$1" x="-228.6" y="111.76" rot="R90"/>
+<instance part="Q2" gate="G$1" x="-226.06" y="124.46"/>
+<instance part="D5" gate="G$1" x="-193.04" y="78.74" rot="R90"/>
+<instance part="D6" gate="G$1" x="-210.82" y="78.74" rot="R90"/>
+<instance part="D7" gate="G$1" x="-180.34" y="93.98" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9091,8 +9092,6 @@ http://www.zetex.com&lt;p&gt;
 <junction x="-238.76" y="78.74"/>
 </segment>
 <segment>
-<pinref part="!!!MBR0530!!!1" gate="G$1" pin="C"/>
-<wire x1="-193.04" y1="81.28" x2="-193.04" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <pinref part="C27" gate="G$1" pin="1"/>
 <wire x1="-193.04" y1="76.2" x2="-193.04" y2="68.58" width="0.1524" layer="91"/>
@@ -9101,6 +9100,8 @@ http://www.zetex.com&lt;p&gt;
 <junction x="-193.04" y="68.58"/>
 <pinref part="C30" gate="G$1" pin="1"/>
 <wire x1="-198.12" y1="76.2" x2="-193.04" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="D5" gate="G$1" pin="K"/>
+<wire x1="-193.04" y1="78.74" x2="-193.04" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-193.04" y="76.2"/>
 </segment>
 <segment>
@@ -9117,6 +9118,10 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="GND18" gate="1" pin="GND"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="-218.44" y1="104.14" x2="-218.44" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="-228.6" y1="106.68" x2="-228.6" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-228.6" y1="104.14" x2="-218.44" y2="104.14" width="0.1524" layer="91"/>
+<junction x="-218.44" y="104.14"/>
 </segment>
 <segment>
 <pinref part="MK1" gate="G$1" pin="GND"/>
@@ -9331,19 +9336,21 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="5.08" y1="172.72" x2="17.78" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="172.72" x2="17.78" y2="165.1" width="0.1524" layer="91"/>
 <junction x="5.08" y="172.72"/>
-<wire x1="17.78" y1="172.72" x2="30.48" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="25.4" y1="172.72" x2="17.78" y2="172.72" width="0.1524" layer="91"/>
 <junction x="17.78" y="172.72"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="G"/>
-<wire x1="35.56" y1="165.1" x2="35.56" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="162.56" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="40.64" y1="162.56" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="160.02" x2="35.56" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<wire x1="27.94" y1="165.1" x2="27.94" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="162.56" x2="35.56" y2="162.56" width="0.1524" layer="91"/>
 <junction x="35.56" y="162.56"/>
 </segment>
 </net>
@@ -9363,13 +9370,13 @@ http://www.zetex.com&lt;p&gt;
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="D"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="38.1" y1="172.72" x2="40.64" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="172.72" x2="40.64" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="172.72" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="A" pin="1"/>
 <wire x1="40.64" y1="175.26" x2="40.64" y2="172.72" width="0.1524" layer="91"/>
 <junction x="40.64" y="172.72"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -9564,8 +9571,6 @@ http://www.zetex.com&lt;p&gt;
 <label x="-342.9" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="!!!MBR0530!!!" gate="G$1" pin="C"/>
-<wire x1="-210.82" y1="81.28" x2="-210.82" y2="76.2" width="0.1524" layer="91"/>
 <label x="-256.54" y="68.58" size="1.778" layer="95"/>
 <wire x1="-210.82" y1="76.2" x2="-210.82" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-210.82" y1="68.58" x2="-256.54" y2="68.58" width="0.1524" layer="91"/>
@@ -9574,6 +9579,8 @@ http://www.zetex.com&lt;p&gt;
 <junction x="-210.82" y="68.58"/>
 <pinref part="C30" gate="G$1" pin="2"/>
 <wire x1="-205.74" y1="76.2" x2="-210.82" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="K"/>
+<wire x1="-210.82" y1="78.74" x2="-210.82" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-210.82" y="76.2"/>
 </segment>
 </net>
@@ -9584,8 +9591,6 @@ http://www.zetex.com&lt;p&gt;
 <label x="-342.9" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="!!!MBR0530!!!2" gate="G$1" pin="A"/>
-<wire x1="-180.34" y1="81.28" x2="-180.34" y2="58.42" width="0.1524" layer="91"/>
 <label x="-256.54" y="58.42" size="1.778" layer="95"/>
 <wire x1="-180.34" y1="58.42" x2="-200.66" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-200.66" y1="58.42" x2="-256.54" y2="58.42" width="0.1524" layer="91"/>
@@ -9594,6 +9599,8 @@ http://www.zetex.com&lt;p&gt;
 <junction x="-200.66" y="58.42"/>
 <pinref part="C28" gate="G$1" pin="2"/>
 <wire x1="-180.34" y1="55.88" x2="-180.34" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="D7" gate="G$1" pin="A"/>
+<wire x1="-180.34" y1="78.74" x2="-180.34" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-180.34" y="58.42"/>
 </segment>
 </net>
@@ -9643,8 +9650,12 @@ http://www.zetex.com&lt;p&gt;
 </segment>
 <segment>
 <label x="-256.54" y="124.46" size="1.778" layer="95"/>
-<pinref part="!!!SI1308EDL!!!" gate="A" pin="G"/>
-<wire x1="-223.52" y1="124.46" x2="-256.54" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="-228.6" y1="124.46" x2="-256.54" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="-228.6" y1="116.84" x2="-228.6" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="-228.6" y1="124.46" x2="-226.06" y2="124.46" width="0.1524" layer="91"/>
+<junction x="-228.6" y="124.46"/>
 </segment>
 </net>
 <net name="VSLR" class="0">
@@ -9668,12 +9679,11 @@ http://www.zetex.com&lt;p&gt;
 <label x="-342.9" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="!!!SI1308EDL!!!" gate="A" pin="S"/>
-<wire x1="-218.44" y1="121.92" x2="-218.44" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="-218.44" y1="119.38" x2="-256.54" y2="119.38" width="0.1524" layer="91"/>
 <label x="-256.54" y="119.38" size="1.778" layer="95"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="-218.44" y1="119.38" x2="-218.44" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
 <junction x="-218.44" y="119.38"/>
 </segment>
 </net>
@@ -9688,27 +9698,27 @@ http://www.zetex.com&lt;p&gt;
 <segment>
 <pinref part="C26" gate="G$1" pin="2"/>
 <wire x1="-198.12" y1="96.52" x2="-193.04" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="!!!MBR0530!!!1" gate="G$1" pin="A"/>
-<wire x1="-193.04" y1="96.52" x2="-193.04" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="D5" gate="G$1" pin="A"/>
 <wire x1="-193.04" y1="96.52" x2="-180.34" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-193.04" y1="93.98" x2="-193.04" y2="96.52" width="0.1524" layer="91"/>
 <junction x="-193.04" y="96.52"/>
-<pinref part="!!!MBR0530!!!2" gate="G$1" pin="C"/>
-<wire x1="-180.34" y1="96.52" x2="-180.34" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="D7" gate="G$1" pin="K"/>
+<wire x1="-180.34" y1="93.98" x2="-180.34" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="!!!MBR0530!!!" gate="G$1" pin="A"/>
 <pinref part="L2" gate="G$1" pin="2"/>
 <wire x1="-223.52" y1="96.52" x2="-210.82" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-210.82" y1="96.52" x2="-210.82" y2="86.36" width="0.1524" layer="91"/>
 <junction x="-210.82" y="96.52"/>
 <pinref part="C26" gate="G$1" pin="1"/>
 <wire x1="-205.74" y1="96.52" x2="-210.82" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-210.82" y1="96.52" x2="-210.82" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="-210.82" y1="134.62" x2="-218.44" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="!!!SI1308EDL!!!" gate="A" pin="D"/>
-<wire x1="-218.44" y1="134.62" x2="-218.44" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-210.82" y1="96.52" x2="-210.82" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-210.82" y1="137.16" x2="-218.44" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="-218.44" y1="137.16" x2="-218.44" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="A"/>
+<wire x1="-210.82" y1="96.52" x2="-210.82" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">

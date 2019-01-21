@@ -9476,6 +9476,13 @@ http://www.zetex.com&lt;p&gt;
 <label x="-342.9" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="BS" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="8"/>
+<wire x1="-312.42" y1="106.68" x2="-309.88" y2="106.68" width="0.1524" layer="91"/>
+<label x="-312.42" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

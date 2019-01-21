@@ -1965,7 +1965,10 @@ design rules under a new name.</description>
 <element name="C29" library="rcl" package="C0805" value="10µF" x="-54.61" y="-434.34"/>
 <element name="C30" library="rcl" package="C0805" value="1µF" x="-54.61" y="-440.69"/>
 <element name="C27" library="rcl" package="C0805" value="10µF" x="-54.61" y="-447.04"/>
-<element name="R15" library="rcl" package="R0805" value="100k" x="-54.61" y="-453.39"/>
+<element name="R15" library="rcl" package="R0805" value="470m" x="-54.61" y="-453.39"/>
+<element name="C31" library="rcl" package="C0805" value="10µF" x="-54.61" y="-459.74"/>
+<element name="C32" library="rcl" package="C0805" value="2.2µF" x="-54.61" y="-466.09"/>
+<element name="C33" library="rcl" package="C0805" value="1µF" x="-54.61" y="-472.44"/>
 </elements>
 <signals>
 <signal name="N$3">
@@ -2025,9 +2028,6 @@ design rules under a new name.</description>
 <contactref element="C11" pad="2"/>
 <contactref element="C10" pad="2"/>
 <contactref element="IC1" pad="3"/>
-<contactref element="MK1" pad="4"/>
-<contactref element="MK1" pad="2"/>
-<contactref element="MK1" pad="3"/>
 <contactref element="U2" pad="P$7"/>
 <contactref element="C8" pad="2"/>
 <contactref element="C7" pad="2"/>
@@ -2048,6 +2048,9 @@ design rules under a new name.</description>
 <contactref element="R15" pad="1"/>
 <contactref element="C27" pad="1"/>
 <contactref element="C30" pad="1"/>
+<contactref element="MK1" pad="2"/>
+<contactref element="MK1" pad="4"/>
+<contactref element="MK1" pad="3"/>
 <wire x1="-55.56" y1="-447.04" x2="-55.56" y2="-453.39" width="0" layer="19" extent="1-1"/>
 <wire x1="-55.56" y1="-440.69" x2="-55.56" y2="-447.04" width="0" layer="19" extent="1-1"/>
 <wire x1="-55.56" y1="-434.34" x2="-55.56" y2="-440.69" width="0" layer="19" extent="1-1"/>
@@ -2118,6 +2121,8 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="13"/>
 <contactref element="C17" pad="1"/>
 <contactref element="C16" pad="1"/>
+<contactref element="C31" pad="1"/>
+<contactref element="C33" pad="1"/>
 <wire x1="-40.32" y1="-142.24" x2="-40.32" y2="-148.59" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.32" y1="-101.6" x2="-40.32" y2="-142.24" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.32" y1="-95.25" x2="-40.32" y2="-101.6" width="0" layer="19" extent="1-1"/>
@@ -2134,6 +2139,8 @@ design rules under a new name.</description>
 <wire x1="-55.56" y1="-309.88" x2="-55.56" y2="-303.53" width="0" layer="19" extent="1-1"/>
 <wire x1="-55.56" y1="-316.23" x2="-55.56" y2="-309.88" width="0" layer="19" extent="1-1"/>
 <wire x1="-55.56" y1="-322.58" x2="-55.56" y2="-316.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.56" y1="-459.74" x2="-55.56" y2="-322.58" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.56" y1="-472.44" x2="-55.56" y2="-459.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U4" pad="5"/>
@@ -2178,9 +2185,6 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="1"/>
 <wire x1="-39.37" y1="-236.22" x2="-49.44" y2="-240.03" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.56" y1="-227.33" x2="-39.37" y2="-236.22" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="VDD">
-<contactref element="MK1" pad="5"/>
 </signal>
 <signal name="N$6">
 <contactref element="HM1" pad="6"/>
@@ -2363,6 +2367,21 @@ design rules under a new name.</description>
 <wire x1="-55.56" y1="-396.24" x2="-53.46" y2="-408.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.39" y1="-388.62" x2="-55.56" y2="-396.24" width="0" layer="19" extent="1-1"/>
 <wire x1="-54.5846" y1="-370.586" x2="-51.39" y2="-388.62" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$26">
+<contactref element="MK1" pad="5"/>
+<contactref element="C31" pad="2"/>
+<contactref element="C33" pad="2"/>
+<wire x1="-53.66" y1="-459.74" x2="-52.5025" y2="-241.209" width="0" layer="19" extent="1-1"/>
+<wire x1="-53.66" y1="-472.44" x2="-53.66" y2="-459.74" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$22">
+<contactref element="MK1" pad="1"/>
+<contactref element="C32" pad="1"/>
+<wire x1="-55.56" y1="-466.09" x2="-54.1775" y2="-241.209" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ADC">
+<contactref element="C32" pad="2"/>
 </signal>
 </signals>
 </board>
