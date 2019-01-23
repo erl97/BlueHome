@@ -20979,8 +20979,8 @@ www.irf.com&lt;p&gt;
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="C24" library="rcl" deviceset="C-EU" device="C0805" value="10µF"/>
 <part name="C25" library="rcl" deviceset="C-EU" device="C0805" value="10µF"/>
-<part name="L2" library="rcl" deviceset="L-EU" device="L1812" value="68µH"/>
-<part name="C26" library="rcl" deviceset="C-EU" device="C0805" value="0.1µF"/>
+<part name="L2" library="rcl" deviceset="L-EU" device="L1812" value="10µH"/>
+<part name="C26" library="rcl" deviceset="C-EU" device="C0805" value="4.7µF"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GNDA" device=""/>
 <part name="C28" library="rcl" deviceset="C-EU" device="C0805" value="1µF"/>
@@ -22306,20 +22306,22 @@ www.irf.com&lt;p&gt;
 <net name="+3V3_RTC" class="0">
 <segment>
 <pinref part="D2" gate="1" pin="C"/>
-<wire x1="187.96" y1="88.9" x2="187.96" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="88.9" x2="187.96" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="86.36" x2="187.96" y2="76.2" width="0.1524" layer="91"/>
-<junction x="187.96" y="86.36"/>
-<label x="203.2" y="66.04" size="1.778" layer="95"/>
+<wire x1="187.96" y1="83.82" x2="187.96" y2="76.2" width="0.1524" layer="91"/>
+<junction x="187.96" y="83.82"/>
+<label x="167.64" y="86.36" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="VDD"/>
-<wire x1="162.56" y1="78.74" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="86.36" x2="187.96" y2="86.36" width="0.1524" layer="91"/>
-<junction x="162.56" y="86.36"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="86.36" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="78.74" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="83.82" x2="187.96" y2="83.82" width="0.1524" layer="91"/>
+<junction x="162.56" y="83.82"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="93.98" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
+<junction x="162.56" y="83.82"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="86.36" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="86.36" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
 <junction x="162.56" y="86.36"/>
 </segment>
 </net>
