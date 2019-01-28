@@ -15141,6 +15141,29 @@ diameter 2.3 mm, vertical, grid 10.16 mm</description>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
+<package name="INDM1200X1200X1000N">
+<wire x1="-6" y1="6" x2="-6" y2="-6" width="0.127" layer="51"/>
+<wire x1="-6" y1="-6" x2="6" y2="-6" width="0.127" layer="21"/>
+<wire x1="6" y1="-6" x2="6" y2="6" width="0.127" layer="51"/>
+<wire x1="6" y1="6" x2="-6" y2="6" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="6.25" x2="-6.75" y2="-6.25" width="0.05" layer="39"/>
+<wire x1="-6.75" y1="-6.25" x2="6.75" y2="-6.25" width="0.05" layer="39"/>
+<wire x1="6.75" y1="-6.25" x2="6.75" y2="6.25" width="0.05" layer="39"/>
+<wire x1="6.75" y1="6.25" x2="-6.75" y2="6.25" width="0.05" layer="39"/>
+<circle x="-7.375" y="0.125" radius="0.5" width="0" layer="21"/>
+<wire x1="-6" y1="3.15" x2="-6" y2="6" width="0.127" layer="21"/>
+<wire x1="6" y1="6" x2="6" y2="3.15" width="0.127" layer="21"/>
+<wire x1="6" y1="-6" x2="6" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="-6" y1="-6" x2="-6" y2="-3.15" width="0.127" layer="21"/>
+<text x="-7.543190625" y="7.1241" size="1.419259375" layer="25">&gt;NAME</text>
+<text x="-7.418440625" y="-8.958109375" size="1.42205" layer="27">&gt;VALUE</text>
+<smd name="2" x="4.95" y="0" dx="5.4" dy="2.9" layer="1" rot="R270"/>
+<smd name="1" x="-4.95" y="0" dx="5.4" dy="2.9" layer="1" rot="R270"/>
+</package>
+<package name="STAR_GROUND">
+<smd name="P$1" x="0.635" y="0" dx="1.27" dy="0.635" layer="1" rot="R180"/>
+<smd name="P$2" x="-0.635" y="0" dx="1.27" dy="0.635" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ACS723LLCTR-40AB-T">
@@ -16038,6 +16061,14 @@ diameter 2.3 mm, vertical, grid 10.16 mm</description>
 <pin name="SW" x="20.32" y="7.62" length="middle" rot="R180"/>
 <pin name="AGND_1" x="-17.78" y="-12.7" length="middle"/>
 </symbol>
+<symbol name="STAR_GROUND">
+<pin name="P$1" x="-5.08" y="0" length="middle"/>
+<pin name="P$2" x="5.08" y="0" length="middle" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-3.81" x2="1.27" y2="-3.81" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ACS723LLCTR-40AB-T" prefix="U">
@@ -16603,7 +16634,16 @@ today’s SMD manufacturing environment.</description>
 <gate name="G$1" symbol="L-EU_S" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="R0402">
+<device name="0402" package="R0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="IND" package="INDM1200X1200X1000N">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -17387,6 +17427,22 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/FTR-K1CK005W.
 <connect gate="G$1" pin="SW" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="3"/>
 <connect gate="G$1" pin="VIN" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STAR_GROUND">
+<gates>
+<gate name="G$1" symbol="STAR_GROUND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STAR_GROUND">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
