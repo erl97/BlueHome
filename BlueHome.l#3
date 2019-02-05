@@ -17510,6 +17510,9 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/PS1720P02.pdf
 </gates>
 <devices>
 <device name="" package="PROXIMITY">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

@@ -2923,7 +2923,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pad name="P$1" x="6.5" y="0" drill="0.6"/>
 <circle x="0" y="0" radius="7.5" width="0" layer="1"/>
 <hole x="0" y="0" drill="2"/>
-<circle x="0" y="0" radius="10" width="0" layer="41"/>
+<circle x="0" y="0" radius="8.89" width="0" layer="41"/>
 </package>
 <package name="WHEEL">
 <rectangle x1="-0.5534" y1="-12.936859375" x2="0.0409" y2="-12.929434375" layer="1"/>

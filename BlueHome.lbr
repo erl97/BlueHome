@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.000123031496" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -893,10 +893,6 @@ grid 2.54 mm</description>
 <wire x1="1.675" y1="-2.05" x2="2.05" y2="-2.05" width="0.15" layer="21"/>
 <wire x1="-2.05" y1="-2.05" x2="-2.05" y2="-1.675" width="0.15" layer="21"/>
 <wire x1="-2.05" y1="1.675" x2="-2.05" y2="2.05" width="0.15" layer="21"/>
-<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.1" layer="41"/>
-<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.1" layer="41"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.1" layer="41"/>
-<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.1" layer="41"/>
 <text x="-2.05" y="2.65" size="1" layer="25">&gt;NAME</text>
 <circle x="-2.95" y="1.2" radius="0.25" width="0" layer="21"/>
 <smd name="1" x="-1.975" y="1.2" dx="0.85" dy="0.2" layer="1"/>
@@ -928,6 +924,12 @@ grid 2.54 mm</description>
 <smd name="27" x="-0.8" y="1.975" dx="0.2" dy="0.85" layer="1"/>
 <smd name="28" x="-1.2" y="1.975" dx="0.2" dy="0.85" layer="1"/>
 <smd name="29" x="0" y="0" dx="2.65" dy="2.65" layer="1"/>
+<wire x1="-2.050215625" y1="1.772096875" x2="-2.050215625" y2="-1.872403125" width="0.15" layer="21"/>
+<wire x1="-2.050215625" y1="-1.872403125" x2="-2.04464375" y2="-1.872403125" width="0.15" layer="21"/>
+<wire x1="-1.844078125" y1="-2.050728125" x2="1.816221875" y2="-2.050728125" width="0.15" layer="21"/>
+<wire x1="2.050509375" y1="-1.761025" x2="2.050509375" y2="1.8279" width="0.15" layer="21"/>
+<wire x1="2.050509375" y1="1.8279" x2="2.05608125" y2="1.8279" width="0.15" layer="21"/>
+<wire x1="1.794196875" y1="2.0508125" x2="-1.8554875" y2="2.0508125" width="0.15" layer="21"/>
 </package>
 <package name="P-2081-1228">
 <wire x1="6.05" y1="12.025" x2="5.05" y2="12.025" width="0.01" layer="51"/>
