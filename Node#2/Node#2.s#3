@@ -472,7 +472,7 @@
 <pad name="P$1" x="6.5" y="0" drill="0.6"/>
 <circle x="0" y="0" radius="7.5" width="0" layer="1"/>
 <hole x="0" y="0" drill="2"/>
-<circle x="0" y="0" radius="10" width="0" layer="41"/>
+<circle x="0" y="0" radius="8.89" width="0" layer="41"/>
 </package>
 <package name="WHEEL">
 <rectangle x1="-0.5534" y1="-12.936859375" x2="0.0409" y2="-12.929434375" layer="1"/>
@@ -12538,6 +12538,7 @@
 <pad name="SEG2" x="12" y="0" drill="0.6" shape="octagon"/>
 <pad name="SEG3" x="0" y="-12" drill="0.6" shape="octagon"/>
 <pad name="SEG4" x="-12" y="0" drill="0.6" shape="octagon"/>
+<circle x="0" y="0" radius="14.19903125" width="0.127" layer="41"/>
 </package>
 <package name="SOT95P230X110-3N">
 <wire x1="-0.7" y1="1.5" x2="0.7" y2="1.5" width="0.127" layer="51"/>
@@ -28329,13 +28330,6 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <wire x1="167.64" y1="124.46" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="P+3" gate="1" pin="V+"/>
-<wire x1="31.75" y1="74.93" x2="31.75" y2="69.85" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="G3" gate="G$1" pin="+"/>
@@ -28431,6 +28425,11 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <wire x1="106.68" y1="134.62" x2="106.68" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="A" pin="2"/>
 <wire x1="106.68" y1="132.08" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="P+3" gate="1" pin="V+"/>
+<wire x1="31.75" y1="69.85" x2="31.75" y2="74.93" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC2" class="0">
@@ -29696,12 +29695,6 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="R23" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="GPIO6"/>
-<wire x1="208.28" y1="48.26" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="GPIO7"/>
@@ -29713,6 +29706,11 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <label x="139.7" y="124.46" size="1.778" layer="95"/>
 <wire x1="147.32" y1="124.46" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GPIO6"/>
+<wire x1="208.28" y1="48.26" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
+<label x="208.28" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$28" class="0">
