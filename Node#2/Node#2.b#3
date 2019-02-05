@@ -16312,6 +16312,12 @@ design rules under a new name.</description>
 <signal name="PROX_SENS">
 <contactref element="U$2" pad="31"/>
 <contactref element="U$7" pad="P$1"/>
+<polygon width="0.254" layer="1">
+<vertex x="0" y="51.308"/>
+<vertex x="60.452" y="51.308"/>
+<vertex x="60.452" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
 <wire x1="30.734" y1="43.18" x2="21.887884375" y2="68.414346875" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SEG1">

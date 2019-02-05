@@ -29695,12 +29695,6 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="R23" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="GPIO6"/>
-<wire x1="208.28" y1="48.26" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="GPIO7"/>
@@ -29712,6 +29706,11 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <label x="139.7" y="124.46" size="1.778" layer="95"/>
 <wire x1="147.32" y1="124.46" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GPIO6"/>
+<wire x1="208.28" y1="48.26" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
+<label x="208.28" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$28" class="0">

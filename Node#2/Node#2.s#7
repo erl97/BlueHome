@@ -27420,7 +27420,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="220.98" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DIO8" class="0">
+<net name="DIO13" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="INTB"/>
 <wire x1="160.02" y1="48.26" x2="146.05" y2="48.26" width="0.1524" layer="91"/>

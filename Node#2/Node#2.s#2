@@ -472,7 +472,7 @@
 <pad name="P$1" x="6.5" y="0" drill="0.6"/>
 <circle x="0" y="0" radius="7.5" width="0" layer="1"/>
 <hole x="0" y="0" drill="2"/>
-<circle x="0" y="0" radius="10" width="0" layer="41"/>
+<circle x="0" y="0" radius="8.89" width="0" layer="41"/>
 </package>
 <package name="WHEEL">
 <rectangle x1="-0.5534" y1="-12.936859375" x2="0.0409" y2="-12.929434375" layer="1"/>
@@ -12538,6 +12538,7 @@
 <pad name="SEG2" x="12" y="0" drill="0.6" shape="octagon"/>
 <pad name="SEG3" x="0" y="-12" drill="0.6" shape="octagon"/>
 <pad name="SEG4" x="-12" y="0" drill="0.6" shape="octagon"/>
+<circle x="0" y="0" radius="14.19903125" width="0.127" layer="41"/>
 </package>
 <package name="SOT95P230X110-3N">
 <wire x1="-0.7" y1="1.5" x2="0.7" y2="1.5" width="0.127" layer="51"/>

@@ -27967,7 +27967,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="L1" library="rcl" deviceset="L-EU" device="L4532P" value="2.2u"/>
+<part name="L1" library="rcl" deviceset="L-EU" device="L5038P" value="2.2u"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
