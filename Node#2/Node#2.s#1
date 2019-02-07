@@ -30784,7 +30784,7 @@ Solder type</description>
 <wire x1="152.4" y1="30.48" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RESET" class="0">
+<net name="RESETN" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="RESETB"/>
 <wire x1="160.02" y1="58.42" x2="146.05" y2="58.42" width="0.1524" layer="91"/>

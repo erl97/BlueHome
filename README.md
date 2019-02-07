@@ -1,3 +1,3 @@
 # BlueHome Project
 
-Hier entsteht ein Smart Home Projekt auf Basis von Bluetooth LE.
+Zweite Version der Node#2 Platine
