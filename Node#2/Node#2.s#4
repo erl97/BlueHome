@@ -28137,8 +28137,8 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+3" library="supply1" deviceset="V+" device=""/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
-<part name="R17" library="rcl" deviceset="R-EU_" device="R0805" value="1.5M"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="2M"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R0805" value="3M"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="P-1" library="supply1" deviceset="GNDA" device=""/>
 <part name="P-2" library="supply1" deviceset="GNDA" device=""/>
@@ -28153,7 +28153,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="1µF"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="1µF"/>
-<part name="!!!FDN304PZ!!!" library="BlueHome" deviceset="FDN304PZ" device=""/>
+<part name="Q3" library="BlueHome" deviceset="FDN304PZ" device=""/>
 <part name="D2" library="eagle-ltspice" deviceset="DIODE_E-" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="050-055X075" value="100mF"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
@@ -28163,7 +28163,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="FRAME2" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="FRAME3" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="C34" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="C34" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="LS1" library="BlueHome" deviceset="PS1720P02" device=""/>
 <part name="Q1" library="transistor-npn" deviceset="BC847*" device="SMD" technology="ALT1"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805"/>
@@ -28261,7 +28261,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <instance part="P+1" gate="1" x="121.92" y="137.16" smashed="yes">
 <attribute name="VALUE" x="119.38" y="134.62" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="!!!FDN304PZ!!!" gate="G$1" x="73.66" y="129.54" smashed="yes" rot="MR90">
+<instance part="Q3" gate="G$1" x="73.66" y="129.54" smashed="yes" rot="MR90">
 <attribute name="NAME" x="73.66" y="132.08" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="71.12" y="132.08" size="1.778" layer="96" rot="MR90"/>
 </instance>
@@ -28391,7 +28391,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <wire x1="78.74" y1="119.38" x2="78.74" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="121.92" x2="78.74" y2="121.92" width="0.1524" layer="91"/>
 <junction x="78.74" y="121.92"/>
-<pinref part="!!!FDN304PZ!!!" gate="G$1" pin="G"/>
+<pinref part="Q3" gate="G$1" pin="G"/>
 <wire x1="76.2" y1="121.92" x2="76.2" y2="127" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="124.46" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
@@ -28401,7 +28401,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <segment>
 <pinref part="U$1" gate="A" pin="1"/>
 <wire x1="88.9" y1="132.08" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="!!!FDN304PZ!!!" gate="G$1" pin="S"/>
+<pinref part="Q3" gate="G$1" pin="S"/>
 <wire x1="83.82" y1="132.08" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="129.54" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
 <junction x="83.82" y="132.08"/>
@@ -28475,7 +28475,7 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <net name="N$9" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="P$1"/>
-<pinref part="!!!FDN304PZ!!!" gate="G$1" pin="D"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
 <wire x1="48.26" y1="132.08" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
