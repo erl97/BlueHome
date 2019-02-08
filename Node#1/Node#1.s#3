@@ -27421,11 +27421,21 @@ Grid 5.00 mm&lt;p&gt;
 <pinref part="U2" gate="G$0" pin="I/O[11]"/>
 <wire x1="83.82" y1="38.1" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="194.31" y1="134.62" x2="195.58" y2="135.89" width="0.1524" layer="91"/>
+<pinref part="JP7" gate="A" pin="2"/>
+<wire x1="195.58" y1="135.89" x2="195.58" y2="158.75" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="IO12" class="0">
 <segment>
 <pinref part="U2" gate="G$0" pin="I/O[12]"/>
 <wire x1="83.82" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="196.85" y1="134.62" x2="198.12" y2="135.89" width="0.1524" layer="91"/>
+<pinref part="JP7" gate="A" pin="3"/>
+<wire x1="198.12" y1="135.89" x2="198.12" y2="158.75" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IO13" class="0">
@@ -27433,17 +27443,32 @@ Grid 5.00 mm&lt;p&gt;
 <pinref part="U2" gate="G$0" pin="I/O[13]"/>
 <wire x1="83.82" y1="33.02" x2="78.74" y2="33.02" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="199.39" y1="134.62" x2="200.66" y2="135.89" width="0.1524" layer="91"/>
+<pinref part="JP7" gate="A" pin="4"/>
+<wire x1="200.66" y1="135.89" x2="200.66" y2="158.75" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="IO14" class="0">
 <segment>
 <pinref part="U2" gate="G$0" pin="I/O[14]"/>
 <wire x1="83.82" y1="30.48" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="201.93" y1="134.62" x2="203.2" y2="135.89" width="0.1524" layer="91"/>
+<pinref part="JP7" gate="A" pin="5"/>
+<wire x1="203.2" y1="135.89" x2="203.2" y2="158.75" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="IO15" class="0">
 <segment>
 <pinref part="U2" gate="G$0" pin="I/O[15]"/>
 <wire x1="83.82" y1="27.94" x2="78.74" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="204.47" y1="134.62" x2="205.74" y2="135.89" width="0.1524" layer="91"/>
+<pinref part="JP7" gate="A" pin="6"/>
+<wire x1="205.74" y1="135.89" x2="205.74" y2="158.75" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="O_IO0" class="0">

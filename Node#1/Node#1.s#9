@@ -23331,7 +23331,7 @@ Grid 5.00 mm&lt;p&gt;
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="Relais" current="yes"/>
+<variantdef name="Relais"/>
 <variantdef name="Mosfet"/>
 </variantdefs>
 <classes>
