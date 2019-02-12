@@ -7,7 +7,11 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
+<<<<<<< HEAD
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+=======
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+>>>>>>> 4009d7ead35a2f7b0d1e1ece1fe048cf16d92de1
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15198,11 +15202,19 @@ diameter 2.3 mm, vertical, grid 10.16 mm</description>
 <wire x1="0" y1="0" x2="37.5" y2="0" width="0.127" layer="21"/>
 <wire x1="37.5" y1="0" x2="37.5" y2="52.7" width="0.127" layer="21"/>
 <wire x1="0" y1="52.7" x2="37.5" y2="52.7" width="0.127" layer="21"/>
+<<<<<<< HEAD
 <smd name="P$1" x="5.08" y="54.61" dx="2.54" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$2" x="12.7" y="54.61" dx="2.54" dy="1.27" layer="1" rot="R90"/>
 <wire x1="2.54" y1="58.42" x2="2.54" y2="55.88" width="0.127" layer="21"/>
 <wire x1="1.27" y1="57.15" x2="3.81" y2="57.15" width="0.127" layer="21"/>
 <wire x1="8.89" y1="57.15" x2="11.43" y2="57.15" width="0.127" layer="21"/>
+=======
+<smd name="P$1" x="5.08" y="55.88" dx="5.08" dy="2.54" layer="1" rot="R90"/>
+<smd name="P$2" x="12.7" y="55.88" dx="5.08" dy="2.54" layer="1" rot="R90"/>
+<wire x1="2.54" y1="62.23" x2="2.54" y2="59.69" width="0.127" layer="21"/>
+<wire x1="1.27" y1="60.96" x2="3.81" y2="60.96" width="0.127" layer="21"/>
+<wire x1="8.89" y1="60.96" x2="11.43" y2="60.96" width="0.127" layer="21"/>
+>>>>>>> 4009d7ead35a2f7b0d1e1ece1fe048cf16d92de1
 <wire x1="12.5" y1="0" x2="12.5" y2="52.7" width="0.127" layer="21"/>
 <wire x1="25" y1="0" x2="25" y2="52.7" width="0.127" layer="21"/>
 <wire x1="25.1" y1="0" x2="37.5" y2="1.1" width="0.127" layer="21"/>
@@ -15280,6 +15292,7 @@ diameter 2.3 mm, vertical, grid 10.16 mm</description>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
+<<<<<<< HEAD
 <package name="WHEEL6">
 <rectangle x1="-1.131" y1="-12.909" x2="1.157" y2="-12.883" layer="200"/>
 <rectangle x1="-1.261" y1="-12.883" x2="1.261" y2="-12.857" layer="200"/>
@@ -18945,6 +18958,8 @@ diameter 2.3 mm, vertical, grid 10.16 mm</description>
 <rectangle x1="-1.027" y1="12.831" x2="1.235" y2="12.857" layer="200"/>
 <rectangle x1="-0.403" y1="12.857" x2="0.793" y2="12.883" layer="200"/>
 </package>
+=======
+>>>>>>> 4009d7ead35a2f7b0d1e1ece1fe048cf16d92de1
 </packages>
 <symbols>
 <symbol name="ACS723LLCTR-40AB-T">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2936,7 +2936,10 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <package name="TOUCH_BUTTON">
 <pad name="P$1" x="6.5" y="0" drill="0.6"/>
 <circle x="0" y="0" radius="7.5" width="0" layer="1"/>
+<<<<<<< HEAD
 <hole x="0" y="0" drill="1.75"/>
+=======
+>>>>>>> 4009d7ead35a2f7b0d1e1ece1fe048cf16d92de1
 <circle x="0" y="0" radius="8.89" width="0" layer="41"/>
 </package>
 <package name="WHEEL">
