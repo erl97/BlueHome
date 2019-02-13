@@ -7,9 +7,9 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -489,6 +489,7 @@
 <smd name="2" x="-1.65" y="0.575" dx="0.9" dy="0.85" layer="1"/>
 <smd name="3" x="1.65" y="0.575" dx="0.9" dy="0.85" layer="1"/>
 <smd name="4" x="1.65" y="-0.575" dx="0.9" dy="0.85" layer="1"/>
+<text x="-0.265" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="-0.265" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <wire x1="-1.6" y1="0.6" x2="1.6" y2="0.6" width="0.2" layer="51"/>
 <wire x1="1.6" y1="0.6" x2="1.6" y2="-0.6" width="0.2" layer="51"/>
@@ -498,16 +499,16 @@
 <wire x1="3" y1="2" x2="3" y2="-2" width="0.1" layer="51"/>
 <wire x1="3" y1="-2" x2="-3.53" y2="-2" width="0.1" layer="51"/>
 <wire x1="-3.53" y1="-2" x2="-3.53" y2="2" width="0.1" layer="51"/>
-<wire x1="-1.1" y1="0.575" x2="1.1" y2="0.575" width="0.1" layer="21"/>
-<wire x1="-1.1" y1="-0.6" x2="1.1" y2="-0.6" width="0.1" layer="21"/>
-<wire x1="-2.5" y1="-0.5" x2="-2.5" y2="-0.6" width="0.3" layer="21" curve="180"/>
-<wire x1="-2.5" y1="-0.6" x2="-2.5" y2="-0.5" width="0.3" layer="21" curve="180"/>
+<wire x1="-1.2" y1="0.575" x2="1.2" y2="0.575" width="0.1" layer="21"/>
+<wire x1="-1.2" y1="-0.6" x2="1.2" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="-2.7" y1="-0.5" x2="-2.7" y2="-0.6" width="0.3" layer="21" curve="180"/>
+<wire x1="-2.7" y1="-0.6" x2="-2.7" y2="-0.5" width="0.3" layer="21" curve="180"/>
 </package>
 <package name="TOUCH_BUTTON">
 <pad name="P$1" x="6.5" y="0" drill="0.6"/>
 <circle x="0" y="0" radius="7.5" width="0" layer="1"/>
 <circle x="0" y="0" radius="8.89" width="0" layer="41"/>
-<hole x="0" y="0" drill="0.04445"/>
+<hole x="0" y="0" drill="1.75"/>
 </package>
 <package name="WHEEL">
 <rectangle x1="-0.5534" y1="-12.936859375" x2="0.0409" y2="-12.929434375" layer="1"/>
@@ -15986,14 +15987,14 @@ design rules under a new name.</description>
 <attribute name="NAME" x="23.611" y="39.37" size="1.27" layer="26" rot="MR180" align="center"/>
 <attribute name="VALUE" x="23.865" y="44.704" size="1.27" layer="28" rot="MR180" align="center"/>
 </element>
-<element name="LED6" library="BlueHome" package="156125YV73000" value="156125YV73000" x="36" y="42.162259375" smashed="yes" rot="MR180">
-<attribute name="DESCRIPTION" value="Standard LEDs - SMD WL-SBRW SMD 1205 YBG 592/573nm" x="30.92" y="42.162259375" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="HEIGHT" value="0.8mm" x="30.92" y="42.162259375" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Wurth Elektronik" x="30.92" y="42.162259375" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="156125YV73000" x="30.92" y="42.162259375" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="710-156125YV73000" x="30.92" y="42.162259375" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="35.989" y="39.622259375" size="1.27" layer="26" rot="MR180" align="center"/>
-<attribute name="VALUE" x="35.989" y="44.448259375" size="1.27" layer="28" rot="MR180" align="center"/>
+<element name="LED6" library="BlueHome" package="156125YV73000" value="156125YV73000" x="36.066903125" y="42.162259375" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value="Standard LEDs - SMD WL-SBRW SMD 1205 YBG 592/573nm" x="30.986903125" y="42.162259375" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="HEIGHT" value="0.8mm" x="30.986903125" y="42.162259375" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Wurth Elektronik" x="30.986903125" y="42.162259375" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="156125YV73000" x="30.986903125" y="42.162259375" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="710-156125YV73000" x="30.986903125" y="42.162259375" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="36.055903125" y="39.622259375" size="1.27" layer="26" rot="MR180" align="center"/>
+<attribute name="VALUE" x="36.055903125" y="44.448259375" size="1.27" layer="28" rot="MR180" align="center"/>
 </element>
 <element name="U$8" library="BlueHome" package="WHEEL" value="WHEEL" x="30.25" y="24.5" smashed="yes"/>
 <element name="R5" library="rcl" package="R0805" value="2M" x="40.714" y="57.926" smashed="yes" rot="MR90">
@@ -17082,7 +17083,7 @@ design rules under a new name.</description>
 <contactref element="LED6" pad="3"/>
 <contactref element="LED5" pad="3"/>
 <contactref element="U$2" pad="13"/>
-<wire x1="37.65" y1="42.737259375" x2="37.65" y2="41.587259375" width="0.254" layer="16"/>
+<wire x1="37.716903125" y1="42.737259375" x2="37.716903125" y2="41.587259375" width="0.254" layer="16"/>
 <wire x1="52.15" y1="37.925" x2="52.05" y2="27.4" width="0.254" layer="16"/>
 <wire x1="52.05" y1="27.4" x2="52.15" y2="10.575" width="0.254" layer="16"/>
 <wire x1="52.15" y1="10.575" x2="52.15" y2="9.425" width="0.254" layer="16"/>
@@ -17109,8 +17110,8 @@ design rules under a new name.</description>
 <wire x1="19.4" y1="36.3" x2="22.8" y2="39.7" width="0.254" layer="1"/>
 <wire x1="22.8" y1="39.7" x2="24.7" y2="39.7" width="0.254" layer="1"/>
 <via x="24.7" y="39.7" extent="1-16" drill="0.2032"/>
-<wire x1="24.7" y1="39.7" x2="25.526" y2="40.526" width="0.254" layer="16"/>
-<wire x1="25.526" y1="40.526" x2="25.526" y2="41.589" width="0.254" layer="16"/>
+<wire x1="24.7" y1="39.7" x2="25.426" y2="40.426" width="0.254" layer="16"/>
+<wire x1="25.426" y1="40.426" x2="25.526" y2="41.589" width="0.254" layer="16"/>
 <via x="45.1" y="45" extent="1-16" drill="0.2032"/>
 <wire x1="45.15" y1="45" x2="45.1" y2="45" width="0.254" layer="16"/>
 <wire x1="25.526" y1="42.739" x2="28.861" y2="42.739" width="0.254" layer="16"/>
@@ -17118,7 +17119,7 @@ design rules under a new name.</description>
 <via x="28.9" y="42.7" extent="1-16" drill="0.2032"/>
 <wire x1="28.9" y1="42.7" x2="31.2" y2="45" width="0.254" layer="1"/>
 <wire x1="31.2" y1="45" x2="40.5" y2="45" width="0.254" layer="1"/>
-<wire x1="37.65" y1="42.737259375" x2="38.237259375" y2="42.737259375" width="0.254" layer="16"/>
+<wire x1="37.716903125" y1="42.737259375" x2="38.237259375" y2="42.737259375" width="0.254" layer="16"/>
 <wire x1="54.912" y1="24.56" x2="52.072" y2="27.4" width="0.254" layer="16"/>
 <wire x1="52.072" y1="27.4" x2="52.05" y2="27.4" width="0.254" layer="16"/>
 <wire x1="38.237259375" y1="42.737259375" x2="40.5" y2="45" width="0.2032" layer="16"/>
@@ -17742,16 +17743,14 @@ design rules under a new name.</description>
 <signal name="N$16">
 <contactref element="LED5" pad="1"/>
 <contactref element="R22" pad="2"/>
-<wire x1="22.226828125" y1="45.276828125" x2="22.226" y2="45.256" width="0.254" layer="16"/>
-<wire x1="22.226" y1="42.739" x2="22.226" y2="45.256" width="0.254" layer="16"/>
-<wire x1="22.266" y1="45.316" x2="22.226828125" y2="45.276828125" width="0.254" layer="16"/>
+<wire x1="22.226" y1="42.739" x2="22.326" y2="45.256" width="0.254" layer="16"/>
+<wire x1="22.326" y1="45.256" x2="22.266" y2="45.316" width="0.254" layer="16"/>
 </signal>
 <signal name="N$17">
 <contactref element="LED5" pad="2"/>
 <contactref element="R23" pad="2"/>
-<wire x1="22.226828125" y1="39.051171875" x2="22.226" y2="39.072" width="0.254" layer="16"/>
-<wire x1="22.226" y1="41.589" x2="22.226" y2="39.072" width="0.254" layer="16"/>
-<wire x1="22.266" y1="39.012" x2="22.226828125" y2="39.051171875" width="0.254" layer="16"/>
+<wire x1="22.226" y1="41.589" x2="22.326" y2="39.072" width="0.254" layer="16"/>
+<wire x1="22.326" y1="39.072" x2="22.266" y2="39.012" width="0.254" layer="16"/>
 </signal>
 <signal name="LED6">
 <contactref element="R25" pad="1"/>
@@ -17774,14 +17773,14 @@ design rules under a new name.</description>
 <signal name="N$36">
 <contactref element="R24" pad="2"/>
 <contactref element="LED6" pad="1"/>
-<wire x1="34.458" y1="45.312" x2="34.35" y2="45.204" width="0.254" layer="16"/>
-<wire x1="34.35" y1="42.737259375" x2="34.35" y2="45.204" width="0.254" layer="16"/>
+<wire x1="34.416903125" y1="42.737259375" x2="34.516903125" y2="45.253096875" width="0.254" layer="16"/>
+<wire x1="34.516903125" y1="45.253096875" x2="34.458" y2="45.312" width="0.254" layer="16"/>
 </signal>
 <signal name="N$37">
 <contactref element="LED6" pad="2"/>
 <contactref element="R25" pad="2"/>
-<wire x1="34.35" y1="41.587259375" x2="34.35" y2="39.224" width="0.254" layer="16"/>
-<wire x1="34.35" y1="39.224" x2="34.558" y2="39.016" width="0.254" layer="16"/>
+<wire x1="34.416903125" y1="41.587259375" x2="34.516903125" y2="39.057096875" width="0.254" layer="16"/>
+<wire x1="34.516903125" y1="39.057096875" x2="34.558" y2="39.016" width="0.254" layer="16"/>
 </signal>
 <signal name="RESETN">
 <contactref element="U3" pad="25"/>
