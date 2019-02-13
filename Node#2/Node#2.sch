@@ -453,7 +453,6 @@
 <smd name="2" x="-1.65" y="0.575" dx="0.9" dy="0.85" layer="1"/>
 <smd name="3" x="1.65" y="0.575" dx="0.9" dy="0.85" layer="1"/>
 <smd name="4" x="1.65" y="-0.575" dx="0.9" dy="0.85" layer="1"/>
-<text x="-0.265" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="-0.265" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <wire x1="-1.6" y1="0.6" x2="1.6" y2="0.6" width="0.2" layer="51"/>
 <wire x1="1.6" y1="0.6" x2="1.6" y2="-0.6" width="0.2" layer="51"/>
@@ -463,16 +462,16 @@
 <wire x1="3" y1="2" x2="3" y2="-2" width="0.1" layer="51"/>
 <wire x1="3" y1="-2" x2="-3.53" y2="-2" width="0.1" layer="51"/>
 <wire x1="-3.53" y1="-2" x2="-3.53" y2="2" width="0.1" layer="51"/>
-<wire x1="-1.2" y1="0.575" x2="1.2" y2="0.575" width="0.1" layer="21"/>
-<wire x1="-1.2" y1="-0.6" x2="1.2" y2="-0.6" width="0.1" layer="21"/>
-<wire x1="-2.7" y1="-0.5" x2="-2.7" y2="-0.6" width="0.3" layer="21" curve="180"/>
-<wire x1="-2.7" y1="-0.6" x2="-2.7" y2="-0.5" width="0.3" layer="21" curve="180"/>
+<wire x1="-1.1" y1="0.575" x2="1.1" y2="0.575" width="0.1" layer="21"/>
+<wire x1="-1.1" y1="-0.6" x2="1.1" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="-2.5" y1="-0.5" x2="-2.5" y2="-0.6" width="0.3" layer="21" curve="180"/>
+<wire x1="-2.5" y1="-0.6" x2="-2.5" y2="-0.5" width="0.3" layer="21" curve="180"/>
 </package>
 <package name="TOUCH_BUTTON">
 <pad name="P$1" x="6.5" y="0" drill="0.6"/>
 <circle x="0" y="0" radius="7.5" width="0" layer="1"/>
 <circle x="0" y="0" radius="8.89" width="0" layer="41"/>
-<hole x="0" y="0" drill="1.75"/>
+<hole x="0" y="0" drill="0.04445"/>
 </package>
 <package name="WHEEL">
 <rectangle x1="-0.5534" y1="-12.936859375" x2="0.0409" y2="-12.929434375" layer="1"/>
