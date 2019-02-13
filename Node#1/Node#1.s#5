@@ -28792,7 +28792,7 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="107.95" y="25.4"/>
 </segment>
 </net>
-<net name="ERROR" class="0">
+<net name="IO8" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="4B"/>
 <wire x1="118.11" y1="119.38" x2="120.65" y2="119.38" width="0.1524" layer="91"/>
