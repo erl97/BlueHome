@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -48,7 +48,7 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -2934,7 +2934,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pad name="P$1" x="6.5" y="0" drill="0.6"/>
 <circle x="0" y="0" radius="7.5" width="0" layer="1"/>
 <circle x="0" y="0" radius="8.89" width="0" layer="41"/>
-<hole x="0" y="0" drill="0.04445"/>
+<hole x="0" y="0" drill="1.75"/>
 </package>
 <package name="WHEEL">
 <rectangle x1="-0.5534" y1="-12.936859375" x2="0.0409" y2="-12.929434375" layer="1"/>
@@ -15240,6 +15240,12 @@ diameter 2.3 mm, vertical, grid 10.16 mm</description>
 <wire x1="6" y1="72" x2="21.6" y2="72" width="0.127" layer="21"/>
 <wire x1="6" y1="72" x2="6" y2="70.4" width="0.127" layer="21"/>
 <wire x1="21.6" y1="72" x2="21.6" y2="70.4" width="0.127" layer="21"/>
+<polygon width="0.127" layer="40">
+<vertex x="0" y="0"/>
+<vertex x="0" y="71.12"/>
+<vertex x="45.72" y="71.12"/>
+<vertex x="45.72" y="0"/>
+</polygon>
 </package>
 <package name="SMB">
 <description>&lt;B&gt;DIODE&lt;/B&gt;</description>

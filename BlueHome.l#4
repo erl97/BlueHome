@@ -2932,17 +2932,10 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-3.5" y1="10" x2="-3.5" y2="0" width="0.2" layer="21"/>
 </package>
 <package name="TOUCH_BUTTON">
-<<<<<<< HEAD
 <pad name="P$1" x="6.5" y="0" drill="0.6"/>
 <circle x="0" y="0" radius="7.5" width="0" layer="1"/>
-<hole x="0" y="0" drill="1.75"/>
 <circle x="0" y="0" radius="8.89" width="0" layer="41"/>
-=======
-<pad name="P$1" x="5.23" y="0" drill="0.6"/>
-<circle x="-1.27" y="0" radius="7.5" width="0" layer="1"/>
-<circle x="-1.27" y="0" radius="8.89" width="0" layer="41"/>
-<hole x="-1.27" y="0" drill="0.04445"/>
->>>>>>> 4009d7ead35a2f7b0d1e1ece1fe048cf16d92de1
+<hole x="0" y="0" drill="0.04445"/>
 </package>
 <package name="WHEEL">
 <rectangle x1="-0.5534" y1="-12.936859375" x2="0.0409" y2="-12.929434375" layer="1"/>
@@ -21480,7 +21473,15 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/PS1720P02.pdf
 <gate name="G$1" symbol="WHEEL6" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="WHEEL6">
+<connects>
+<connect gate="G$1" pin="SEG$1" pad="SEG1"/>
+<connect gate="G$1" pin="SEG$2" pad="SEG2"/>
+<connect gate="G$1" pin="SEG$3" pad="SEG3"/>
+<connect gate="G$1" pin="SEG$4" pad="SEG4"/>
+<connect gate="G$1" pin="SEG$5" pad="SEG5"/>
+<connect gate="G$1" pin="SEG$6" pad="SEG6"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
