@@ -21854,7 +21854,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
 <part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
-<part name="U$7" library="BlueHome" deviceset="PROXIMITY" device=""/>
+<part name="PROXI" library="BlueHome" deviceset="PROXIMITY" device=""/>
 <part name="U$10" library="BlueHome" deviceset="BATTER_HOLDER" device=""/>
 <part name="U$11" library="BlueHome" deviceset="DISPLAY" device="">
 <attribute name="SPICEPREFIX" value="X"/>
@@ -21962,6 +21962,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP5" library="testpad" deviceset="PTR1" device="TP20R"/>
 <part name="U$18" library="BlueHome" deviceset="BZB984" device="" value="BZB984_5.4V"/>
 <part name="U$19" library="BlueHome" deviceset="WHEEL6" device=""/>
+<part name="TP4" library="testpad" deviceset="PTR1" device="TP20R"/>
+<part name="TP6" library="testpad" deviceset="PTR1" device="TP20R"/>
 </parts>
 <sheets>
 <sheet>
@@ -23084,7 +23086,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="208.28" y="150.0886" size="1.778" layer="95"/>
 <attribute name="VALUE" x="205.74" y="150.368" size="1.778" layer="96"/>
 </instance>
-<instance part="U$7" gate="G$1" x="223.52" y="96.52" smashed="yes" rot="R270"/>
+<instance part="PROXI" gate="G$1" x="223.52" y="96.52" smashed="yes" rot="R270"/>
 <instance part="LED1" gate="G$1" x="158.75" y="165.1" smashed="yes">
 <attribute name="NAME" x="165.1" y="170.18" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="165.1" y="167.64" size="1.778" layer="96" align="center-left"/>
@@ -23712,7 +23714,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="238.76" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SEG4" class="0">
+<net name="PROXI" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="CAP6"/>
 <wire x1="208.28" y1="81.28" x2="214.63" y2="81.28" width="0.1524" layer="91"/>
@@ -23894,7 +23896,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="PROX" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="P$1"/>
+<pinref part="PROXI" gate="G$1" pin="P$1"/>
 <pinref part="U$2" gate="G$1" pin="CAP0"/>
 <wire x1="218.44" y1="96.52" x2="208.28" y2="96.52" width="0.1524" layer="91"/>
 <label x="208.28" y="96.52" size="1.778" layer="95"/>
@@ -24141,6 +24143,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+<instance part="TP4" gate="G$1" x="30.48" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.83" y="39.624" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="33.02" y="41.91" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TP6" gate="G$1" x="30.48" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.83" y="34.544" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="33.02" y="36.83" size="1.778" layer="97" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -24417,6 +24427,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="76.15681875" y="86.6394" size="1.778" layer="95"/>
 <pinref part="R32" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="TP6" gate="G$1" pin="TP"/>
+<wire x1="27.94" y1="35.56" x2="25.4" y2="35.56" width="0.1524" layer="91"/>
+<label x="22.86" y="35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -24424,6 +24439,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="78.74" y1="83.82" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
 <label x="76.15681875" y="84.0994" size="1.778" layer="95"/>
 <pinref part="R33" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="TP4" gate="G$1" pin="TP"/>
+<wire x1="27.94" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
+<label x="22.86" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXD" class="0">
